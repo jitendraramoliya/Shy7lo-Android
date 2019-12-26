@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:mContext="shy7lo.com.shy7lo.HomeActivity">
+
+    <include android:id="@+id/mTopLayout" layout="@layout/layout_top_title_icon"/>
+
+    <shy7lo.com.shy7lo.widget.PagerSlidingTabStrip
+        android:id="@+id/mTabStrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pstsDividerColor="@android:color/transparent"
+        app:pstsIndicatorColor="@color/green_app"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsShouldExpand="true"
+        app:pstsUnderlineColor="@color/gray_separator"
+        app:pstsUnderlineHeight="0.5dp"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyCustomTabLayout"
+        app:tabIndicatorColor="@color/black"
+        app:tabSelectedTextColor="@color/black"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed" />
+
+    <include layout="@layout/view_line"/>
+
+    <shy7lo.com.shy7lo.widget.NonSwipeableViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:overScrollMode="never"/>
+
+</LinearLayout>

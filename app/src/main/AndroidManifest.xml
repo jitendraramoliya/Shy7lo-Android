@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="shy7lo.com.shy7lo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="shy7lo.com.shy7lo.application.Shy7lo"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:replace="android:supportsRtl">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/favicon" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/white" />
+
+        <!--Add the following to your AndroidManifest.xml to prevent the launching of your main Activity
+       if you are calling startActivity above.-->
+
+
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        // fabric
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="51971a2752e26a003f92e76755e48134047bf982" />
+
+        <!--//Facebook-->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="true" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+
+        <activity
+            android:name="shy7lo.com.shy7lo.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Branch URI scheme -->
+            <intent-filter>
+                <data
+                    android:host="open"
+                    android:scheme="shy7lo" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- Branch App Links -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="z6eh.app.link"
+                    android:scheme="shy7lo" />
+            </intent-filter>
+
+            <!-- Tunes App Links -->
+            <intent-filter>
+                <data android:scheme="shy7lo" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="shy7lo.com.shy7lo.LandingLanguageActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:noHistory="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.LandingCountryActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:noHistory="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.LandingCurrencyActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:noHistory="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.LandingShoppingForActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:noHistory="false"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="shy7lo.com.shy7lo.InitialScreenActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:noHistory="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.AccountSettingActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.HomeActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name="shy7lo.com.shy7lo.FilterNewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.CategoryNewOptionActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.MyOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="shy7lo.com.shy7lo.MyDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <!--<activity-->
+        <!--android:name="shy7lo.com.shy7lo.MyAccountActivity"-->
+        <!--android:screenOrientation="portrait" />-->
+
+        <activity
+            android:name="shy7lo.com.shy7lo.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.AppInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.FilterOptionActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.CategoryOptionActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.InfoOptionActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.WebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="shy7lo.com.shy7lo.AddressMapActivity"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name="shy7lo.com.shy7lo.AddressMap2Activity"-->
+        <!--android:screenOrientation="portrait" />-->
+
+        <activity
+            android:name="shy7lo.com.shy7lo.SearchAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="shy7lo.com.shy7lo.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="shy7lo.com.shy7lo.SignInActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.BrandOptionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.MaintenanceScreenActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.MyOrderDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.MyOrderTrackingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.AddAddressActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.MyAddressActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.ChangeAddressActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="shy7lo.com.shy7lo.DirectWebviewActivity"
+            android:screenOrientation="portrait" />
+
+<!--        firebase auth https://stackoverflow.com/questions/52910727/merged-manifest-warning-after-upgrading-android-studio-to-3-2-1-->
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:launchMode" />
+
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" />
+        <meta-data
+            android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+            android:value="com.google.firebase.components.ComponentRegistrar" />
+        <meta-data
+            android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+            android:value="com.google.firebase.components.ComponentRegistrar" />
+        <meta-data
+            android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+            android:value="com.google.firebase.components.ComponentRegistrar" />
+
+        <service android:name="shy7lo.com.shy7lo.notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="shy7lo.com.shy7lo.notification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="shy7lo.com.shy7lo.service.OneSignalSubcriptionService"
+            android:exported="false" />
+
+        <service
+            android:name="shy7lo.com.shy7lo.notification.MyNotificationExtenderService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+
+        <!-- Branch init -->
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="key_live_ibyGqqvtQCeWktEQixsE2nkhyxp490YI" />
+        <meta-data
+            android:name="io.branch.sdk.BranchKey.test"
+            android:value="key_test_nnCKwuqwNFh8gryGpsNn7flpAsg23Z04" />
+
+        <!-- Branch testing (TestMode "true" to simulate fresh installs on dev environment) -->
+        <meta-data
+            android:name="io.branch.sdk.TestMode"
+            android:value="false" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="shy7lo.com.shy7lo" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+            android:exported="false" />
+
+        <!--Adjust-->
+        <receiver
+            android:name="com.adjust.sdk.AdjustReferrerReceiver"
+            android:permission="android.permission.INSTALL_PACKAGES"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Branch install referrer tracking -->
+        <receiver
+            android:name="io.branch.referral.InstallListener"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <!--// for tune-->
+        <!--<receiver android:name="com.tune.TuneTracker">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.android.vending.INSTALL_REFERRER" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--Fresh Chat-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="shy7lo.com.shy7lo.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/freshchat_file_provider_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

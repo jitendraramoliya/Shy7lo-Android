@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <shy7lo.com.shy7lo.widget.HeaderGridView
+        android:id="@+id/gvProductItems"
+        style="@style/scrollbar_shape_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical">
+
+    </shy7lo.com.shy7lo.widget.HeaderGridView>
+
+    <LinearLayout
+        android:id="@+id/lnrProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/mAVProgressbar"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:indicatorColor="@color/gray_8a"
+            app:indicatorName="BallPulseIndicator" />
+
+    </LinearLayout>
+
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/lnrNothingFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_search" />
+
+        <TextView
+            style="@style/TextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/nothing_found"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h1"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/TextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/change_search"
+            android:textColor="@color/gray_89"
+            android:textSize="@dimen/h1" />
+
+        <TextView
+            android:id="@+id/tvChangeFilters"
+            style="@style/TextviewStyle"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/change_filters"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

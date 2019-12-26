@@ -1,0 +1,92 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="thumb_width">30dp</dimen>
+    <dimen name="thumb_height">30dp</dimen>
+
+    <!--language-->
+    <dimen name="txt_margin_top">50dp</dimen>
+    <dimen name="dot_size">8dp</dimen>
+
+    <!--landing-->
+    <dimen name="flag_width">52dp</dimen>
+    <dimen name="flag_height">32dp</dimen>
+    <dimen name="btn_width">80dp</dimen>
+    <dimen name="btn_height">30dp</dimen>
+    <dimen name="seperator_margin">18dp</dimen>
+    <dimen name="lang_margin_tb">25dp</dimen>
+    <dimen name="landing_top_height">70dp</dimen>
+    <dimen name="landing_bottom_height">45dp</dimen>
+    <dimen name="landing_pop_padding">6dp</dimen>
+    <dimen name="landing_lnr_padding">25dp</dimen>
+    <dimen name="landing_main_lnr_padding_lr">15dp</dimen>
+    <dimen name="landing_main_lnr_padding_tb">30dp</dimen>
+    <dimen name="segment_height">30dp</dimen>
+    <dimen name="pb_img_size">36dip</dimen>
+    <dimen name="sort_size">35dp</dimen>
+
+    <!--product listing-->
+    <dimen name="item_icon_size">30dp</dimen>
+
+    <!--shopping cart-->
+    <dimen name="cart_btn_size">12dp</dimen>
+    <dimen name="cart_item_margin_top">5dp</dimen>
+    <dimen name="cart_item_btn_size">20dp</dimen>
+    <dimen name="cart_item_qty_size">18dp</dimen>
+    <dimen name="cart_item_btn_wishlist_margin">5dp</dimen>
+    <dimen name="cart_counter_margin">25dp</dimen>
+    <dimen name="wishlist_counter_margin">20dp</dimen>
+
+    <!--shipment-->
+    <dimen name="payment_icon_padding">8dp</dimen>
+    <dimen name="payment_icon_width">40dp</dimen>
+    <dimen name="payment_icon_height">35dp</dimen>
+    <dimen name="shipment_et_height">25dp</dimen>
+    <dimen name="cart_tv_height">35dp</dimen>
+
+    //sidebar
+    <dimen name="sidebar_tv_pading">15dp</dimen>
+    <dimen name="sidebar_icon_pading">20dp</dimen>
+
+    <!--title-->
+    <dimen name="title_width">@dimen/_80sdp</dimen>
+    <dimen name="title_height">@dimen/_26sdp</dimen>
+
+
+    <!--payfort-->
+
+    <dimen name="pf_et_height">35dp</dimen>
+    <dimen name="pf_err_height">12dp</dimen>
+
+    <!--country-->
+    <dimen name="country_flag_width">45dp</dimen>
+    <dimen name="country_flag_height">28dp</dimen>
+
+    <!--app info-->
+    <dimen name="info_tv_width">130dp</dimen>
+
+    <dimen name="index_bar_view_width">40dp</dimen>
+    <dimen name="index_bar_view_margin">5dp</dimen>
+
+    <!--picker-->
+    <dimen name="WheelItemTextSize">@dimen/h2</dimen>
+    <dimen name="WheelItemSpace">15dp</dimen>
+    <dimen name="WheelIndicatorSize">5dp</dimen>
+    <dimen name="WheelMargins">10dp</dimen>
+    <dimen name="wheel_spacing">30dp</dimen>
+    <dimen name="wheelSelectorHeight">30dp</dimen>
+
+    <!--Pinview-->
+    <dimen name="pv_pin_view_item_size">48dp</dimen>
+    <dimen name="pv_pin_view_item_radius">5dp</dimen>
+    <dimen name="pv_pin_view_item_spacing">5dp</dimen>
+    <dimen name="pv_pin_view_item_line_width">2dp</dimen>
+    <dimen name="pv_pin_view_cursor_width">2dp</dimen>
+
+</resources>

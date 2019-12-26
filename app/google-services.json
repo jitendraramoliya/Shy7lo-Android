@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "874263957361",
+    "firebase_url": "https://shy7lo-7108d.firebaseio.com",
+    "project_id": "shy7lo-7108d",
+    "storage_bucket": "shy7lo-7108d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874263957361:android:d445fd8704cba03e",
+        "android_client_info": {
+          "package_name": "shy7lo.com.shy7lo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874263957361-ou1q0uga0tp2m864e4r7cb0f43c32bsl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4DEZahzke-02HERU5N0HtM_C7dOoK2Fs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

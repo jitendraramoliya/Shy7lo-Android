@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/mTopLayout"
+        layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rltTopbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_top_alpha"
+            android:clickable="true"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/lnrOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivHeaderList"
+                    android:layout_width="@dimen/item_icon_size"
+                    android:layout_height="@dimen/item_icon_size"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_list_selector" />
+
+                <ImageView
+                    android:id="@+id/ivHeaderGrid"
+                    android:layout_width="@dimen/item_icon_size"
+                    android:layout_height="@dimen/item_icon_size"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivHeaderList"
+                    android:background="@drawable/btn_grid_selector" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivHeaderFilter"
+                android:layout_width="@dimen/item_icon_size"
+                android:layout_height="@dimen/item_icon_size"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_filter" />
+
+            <ImageView
+                android:id="@+id/ivHeaderNew"
+                android:layout_width="@dimen/item_icon_size"
+                android:layout_height="@dimen/item_icon_size"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_top_sort" />
+
+        </RelativeLayout>
+
+        <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<include-->
+        <!--layout="@layout/view_recyler_header"/>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvProductItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:id="@+id/gvProductItems"
+                style="@style/scrollbar_shape_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical">
+
+            </GridView>
+
+            <LinearLayout
+                android:id="@+id/lnrProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <!--<ProgressBar-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:layout_marginRight="15dp"-->
+                    <!--android:indeterminate="true"-->
+                    <!--android:visibility="visible" />-->
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/mAVProgressbar"
+                    style="@style/AVLoadingIndicatorView"
+                    app:indicatorColor="@color/gray_8a"
+                    app:indicatorName="BallPulseIndicator"
+                    android:layout_centerInParent="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrNothingFound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivSearch"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_search" />
+
+                <TextView
+                    style="@style/TextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/nothing_found"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/TextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/change_search"
+                    android:textColor="@color/gray_89"
+                    android:textSize="@dimen/h1" />
+
+                <TextView
+                    android:id="@+id/tvChangeFilters"
+                    style="@style/TextviewStyle"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/change_filters"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/h1" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--</LinearLayout>-->
+
+        <!--</android.support.v4.widget.NestedScrollView>-->
+
+
+    </LinearLayout>
+</LinearLayout>

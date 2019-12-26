@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tune:tune-marketing-console-sdk:5.3.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tune-marketing-console-sdk-5.3.0.aar/53e9dac66bcef885570502fceba97d60/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tune-marketing-console-sdk-5.3.0.aar/53e9dac66bcef885570502fceba97d60/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tune/tune-marketing-console-sdk/5.3.0/5db63d141573c9c8295fea7dca76216794b7d0f7/tune-marketing-console-sdk-5.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

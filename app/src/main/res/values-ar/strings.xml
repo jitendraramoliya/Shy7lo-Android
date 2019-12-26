@@ -1,0 +1,573 @@
+<resources>
+    <string name="app_name">Shy7lo</string>
+
+    <string name="navigation_drawer_open"></string>
+    <string name="navigation_drawer_close"></string>
+
+    <!--landing-->
+    <string name="app_title">شي حلو</string>
+    <string name="select_country">الدولة</string>
+    <string name="select_language">اللغة</string>
+    <string name="language_english">English</string>
+    <string name="language_arabic">العربية</string>
+    <string name="next">حفظ</string>
+    <string name="clear">حذف</string>
+    <string name="done">تأكيد</string>
+    <string name="done_short">تم</string>
+    <string name="signup">التسجيل</string>
+    <string name="country">الدولة</string>
+    <string name="language">اللغة</string>
+    <string name="app_info">بيانات التطبيق</string>
+    <string name="live_chat">التحدث مع فريق خدمة العملاء.</string>
+    <string name="information">عن شي حلو</string>
+    <string name="customer_service">خدمة العملاء</string>
+    <string name="call_us">اتصل بنا</string>
+    <string name="send_feedback">ارسل رأيك</string>
+    <string name="share">شارك</string>
+    <string name="shop">تسوق حسب</string>
+    <string name="inup_name">اسم</string>
+    <string name="gender">النوع</string>
+    <string name="inup_email">البريد الإلكتروني</string>
+    <string name="inup_password">كلمة السر</string>
+    <string name="telephone">رقم الهاتف</string>
+    <string name="register">تسجيل</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+    <string name="apply">اختيار</string>
+    <string name="request_password">اعادة تعيين كلمة السر</string>
+    <string name="congratulation">شكرًا لانضمامك إلى شي حلو</string>
+    <string name="thank_you_choose"> شكرًا لاختياركم شي حلو!</string>
+    <string name="thank_you_join">شكرًا لانضمامك إلى شي حلو!</string>
+    <string name="login_now">دخول</string>
+    <string name="login_require">يجب تسجيل الدخول الى حسابك!</string>
+    <string name="billing_address">عنوان الفاتورة</string>
+    <string name="billing_addresses">عنوان الفاتورة</string>
+    <string name="shiping_addresses">عنوان الشحن</string>
+    <string name="use_billing_addresses">المستخدم كعنوان الفواتير الافتراضي الخاص بي</string>
+    <string name="use_shiping_addresses">المستخدم كعنوان الشحن الافتراضي الخاص بي</string>
+    <string name="option_default_addresses">الخيار المحدد سيكون عنوانك الافتراضي</string>
+    <string name="default_address">العنوان الرئيسي</string>
+    <string name="additional_address">عنوان إضافي</string>
+    <string name="no_address_in_book">لم يتم اضافة عناوين أخرى</string>
+    <string name="off">OFF</string>
+
+    <!--hint-->
+    <string name="hint_name">اسمك</string>
+    <string name="hint_fist_name">اسم</string>
+    <string name="hint_last_name">اسم العائلة</string>
+    <string name="hint_your_gender">النوع</string>
+    <string name="hint_your_email">البريد الإلكتروني</string>
+    <string name="hint_your_telephone">رقم الهاتف</string>
+    <string name="hint_your_password">6 حروف أو أرقام على الأقل</string>
+
+    <!--sidebar-->
+    <string name="shy7lo">شي حلو</string>
+    <string name="products">منتجات</string>
+    <string name="search">البحث</string>
+    <string name="shopping_bag">حقيبة التسوق</string>
+    <string name="wishlist">المفضلة</string>
+    <string name="my_shy7lo">حسابي على شي حلو</string>
+
+    <!--currency-->
+    <!--<string name="SAR">ريال سعودي</string>-->
+    <!--<string name="AED">درهم إماراتي</string>-->
+    <!--<string name="QAR">ريال قطري</string>-->
+    <!--<string name="OMR">ريال عماني</string>-->
+    <!--<string name="KWD">دينار كويتي</string>-->
+    <!--<string name="BHD">دينار بحريني</string>-->
+    <string name="SAR">ر.س.</string>
+    <string name="AED">درهم إماراتي</string>
+    <string name="QAR">ريال قطري</string>
+    <string name="OMR">ر.ع</string>
+    <string name="KWD">د.ك</string>
+    <string name="BHD">د.ب</string>
+
+    <!--Product Details-->
+    <string name="details">التفاصيل</string>
+    <string name="additional_info">تفاصيل إضافية</string>
+    <string name="sku">Sku</string>
+    <string name="name">اسم المنتج</string>
+    <string name="first_name">الاسم الأول</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="color">اللون</string>
+    <string name="perfume_size">الحجم</string>
+    <string name="frame_size">مقاس الاطار</string>
+    <string name="frame_type">المادة المصنوع منها الاطار</string>
+    <string name="add_to_bag">إضافة الى حقيبة التسوق</string>
+    <string name="size">المقاس</string>
+    <string name="price">السعر</string>
+    <string name="quantity">الكمية</string>
+    <string name="filter">تصفية البحث</string>
+    <string name="reset_all">ازالة الفلتر</string>
+    <string name="apply_filter">عرض</string>
+    <string name="all">الكل</string>
+    <string name="view">فرز</string>
+    <string name="view_shopping_bag">التعديل في حقيبة التسوق</string>
+    <string name="sort">ترتيب</string>
+    <string name="sort_discount">تخفيضات</string>
+    <string name="sort_price_low">السعر من الأعلى إلى الأقل</string>
+    <string name="sort_price_high">السعر من الأقل إلى الأعلى</string>
+    <string name="sort_new">وصل حديثًا</string>
+    <string name="sort_popularity">الأكثر شعبية</string>
+    <string name="sort_gridview">جدول</string>
+    <string name="sort_listview">قائمة</string>
+
+    <string name="nothing_found">لم يتم ايجاد نتائج.</string>
+    <string name="change_search">يرجي تغيير كلمة البحث</string>
+    <string name="change_filters"> تغيير فلتر البحث</string>
+    <string name="category">الفئة</string>
+    <string name="categories">الاقسام</string>
+    <string name="exclusive_tax">ضريبة غير شاملة:</string>
+
+    <string name="price_low_to_high">السعر (الأقل)</string>
+    <string name="price_high_to_low">السعر (الأعلى)</string>
+
+    <string name="select_size">من فضلك قم باختيار القياس</string>
+    <string name="osm_choice">اختيار رائع!</string>
+    <string name="what_want">ما هي الخطوة التالية؟</string>
+    <string name="countinue_shoping">متابعة التسوق</string>
+    <string name="view_cart">الإطلاع على حقيبة التسوق</string>
+    <string name="upgrade">تحديث</string>
+    <string name="update">إختيار</string>
+    <string name="cancel">إلغاء</string>
+    <string name="retry">اعادة المحاولة</string>
+    <string name="update_text">من فضلك قم بتحديث التطبيق لتجربة تسوق أفضل.</string>
+    <string name="offline_text">يبدو أن الاتصال بالإنترنت غير متصل</string>
+    <string name="remove_text">لقد قمت باختيار عدد قطع يفوق الكمية المتاحة من المنتج / لقد نفد المخزون المتاح من المنتج.</string>
+    <string name="cart_update">تحديث حقيبة التسوق</string>
+
+    <string name="fash_shipping">الشحن السريع مجانا</string>
+    <string name="genuine_brands">100٪ ماركات أصلية</string>
+    <string name="days_exchange">30 أيام العودة والتبادل</string>
+    <string name="cash_return">العائد النقدي لا الائتمان</string>
+
+    <!--shopping-->
+    <string name="shopping_bag_empty">لاتوجد منتجات في حقيبة التسوق. لإضافة منتج الى حقيبة التسوق قم باختيار المنتج الذي ترغب في اضافته ثم اضغط على اضافة الى حقيبة التسوق</string>
+    <string name="go_product">جميع المنتجات</string>
+    <string name="sub_total">الإجمالي</string>
+    <string name="delivery">الشحن والتوصيل</string>
+    <string name="remove">إلغاء</string>
+    <string name="save_later">حفظ المنتج</string>
+    <string name="checkout">المتابعة لإتمام الطلب</string>
+    <string name="day">يوم</string>
+    <string name="days">أيام</string>
+
+    <!--notification-->
+    <string name="product_removed">تمت إزالة المنتج بنجاح من قائمة المفضلات</string>
+
+    <!--Login-->
+    <string name="not_member">ليس لديك حساب على الموقع؟</string>
+    <string name="continue_guest">المتابعة كضيف</string>
+    <string name="or">أو</string>
+    <string name="login_shy7lo_account">تسجيل الدخول</string>
+    <string name="emaild_address">البريد الإلكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="signin">تسجيل الدخول</string>
+    <string name="my_account">حسابي</string>
+    <string name="logout">خروج</string>
+    <string name="forgot_password">نسيت كلمة السر؟</string>
+    <string name="mail">cs@shy7lo.com</string>
+    <string name="phone">920002352</string>
+
+    <!--shipment-->
+    <string name="shipment">الشحن</string>
+    <string name="review_pay">تفاصيل الطلب وعملية الدفع</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="full_name">اسم*</string>
+    <string name="last_full_name">اسم العائلة*</string>
+    <string name="contact_number">بيانات الاتصال</string>
+    <string name="country_code">كود الدولة</string>
+    <string name="carrier_code">Carrier Code</string>
+    <string name="number_last7">رقم الهاتف </string>
+    <string name="address">العنوان</string>
+    <string name="city">المدينة</string>
+    <string name="region">منطقة</string>
+    <string name="neighborhood">الحي</string>
+    <string name="required_fields">حقول مطلوبة</string>
+    <string name="select">Select</string>
+    <string name="select_address">تحديد العنوان</string>
+    <string name="set_address">إختيار العنوان</string>
+
+    <!--Pay-->
+    <string name="bank_transfer">التحويل البنكي</string>
+    <string name="cash_delivery">الدفع عند الاستلام</string>
+    <string name="credit_debit_card">البطاقات الائتمانية</string>
+    <string name="card_number">رقم البطاقة*</string>
+    <string name="name_card">الإسم الموجود على البطاقة</string>
+    <string name="expiraton_date">تاريخ إنتهاء صلاحية البطاقة*</string>
+    <string name="choose_month">-- الشهر --</string>
+    <string name="choose_year">-- السنة --</string>
+    <string name="cvv">رمز ال CVV*</string>
+    <string name="billing_same_shipping">عنوان الفاتورة هو نفسه عنوان الشحن</string>
+    <string name="register_news">الاشتراك في النشرة البريدية</string>
+    <string name="sadad">سداد</string>
+    <string name="paypal">Paypal</string>
+    <string name="coupon_code">كود الخصم</string>
+    <string name="total">المجموع: </string>
+    <string name="include_duties">إضافة المصاريف الجمركية</string>
+    <string name="validate">تفعيل الرقم</string>
+    <string name="delete">حذف المنتج‎</string>
+    <string name="back">العودة</string>
+    <string name="buy_now">إتمام الطلب</string>
+    <string name="review_order">عرض الطلب</string>
+    <string name="shiping_address">عنوان الشحن</string>
+    <string name="order_id">رقم الطلبية</string>
+    <string name="your_order_no">تم ارسال رقم الطلب </string>
+    <string name="mobile_no">رقم الموبايل</string>
+
+    <!--message-->
+    <string name="msg_email_address">يجب إدخال البريد الإلكتروني</string>
+    <string name="msg_gender">النوع</string>
+    <string name="msg_telephone">من فضلك أدخل رقم الهاتف</string>
+    <string name="msg_email_not_valid">يجب إدخال بريد إلكتروني صحيح</string>
+    <string name="msg_password">يجب إدخال كلمة السر</string>
+    <string name="msg_password_min_char">Password should be at least 8 characters</string>
+    <string name="msg_password_valid_char">Minimum of different classes of characters in password is 3. Classes of characters: Lower Case, Upper Case, Digits, Special Characters.</string>
+    <string name="msg_valid_coupon_code">يجب التأكد من أن كود قسيمة الشراء صحيح</string>
+    <string name="msg_coupon_code">من فضلك قم بادخال كود قسيمة الشراء</string>
+    <string name="msg_firstname">يجب إدخال الإسم بالكامل</string>
+    <string name="msg_lastname">Please enter lastname</string>
+    <string name="msg_contact_number">يجب إدخال رقم الهاتف</string>
+    <string name="msg_address">يجب إدخال العنوان</string>
+    <string name="msg_city">يجب إدخال المدينة</string>
+    <string name="msg_other_city">يرجى إدخال مدينة أخرى</string>
+    <string name="msg_region">من فضلك ادخل المنطقة</string>
+    <string name="msg_select_dob">يرجى تحديد تاريخ الميلاد</string>
+    <string name="msg_select_gender">يرجى تحديد الجنس</string>
+    <string name="msg_select_country">من فضلك قم باختيار الدولة</string>
+    <string name="msg_select_your_country">من فضلك قم باختيار الدولة</string>
+    <string name="msg_select_your_language">اللغة</string>
+    <string name="msg_select_size">من فضلك قم باختيار القياس</string>
+    <string name="msg_select_payment">يجب اختيار وسيلة دفع</string>
+    <string name="msg_order_successful">لقد قمت بإتمام الطلب بنجاح</string>
+    <string name="msg_something_wrong">خطأ</string>
+    <string name="msg_outof_order">لقد نفدت الكمية المتاحة من هذا المنتج</string>
+    <string name="msg_need_login">يجب عليك الدخول إلى حسابك أولاً</string>
+    <string name="msg_need_login_for_wishlist">يجب تسجيل الدخول الى حسابك لإضافة منتج لقائمة الرغبات.</string>
+    <string name="msg_add_wishlist">تم اضافة المنتج الى قائمة الرغبات بنجاح</string>
+    <string name="msg_subcribe_news">اشترك في نشرة أخبار شي حلو لتحصل على أقوى العروض والتخفيضات</string>
+    <string name="msg_terms_privacy">اشتراكك يدل على موافقتك على الشروط والأحكام وسياسة الخصوصية</string>
+    <string name="msg_password_reset">لقد تم اعادة تعيين كلمة السر بنجاح، من فضلك تفقد البريد الإلكتروني الخاص بك.</string>
+    <string name="msg_empty_search">ابحث في المتجر بأكمله ...</string>
+    <string name="msg_need_wishlist">يجب الدخول الى حسابك على شي حلو للاطلاع على قائمة الرغبات</string>
+    <string name="msg_empty_wishlist"> لاتوجد منتجات في قائمة الرغبات الخاصة بك؛ يمكنك اضافة منتجات الى القائمة عن طريق اختيار المنتج والضغط على "اضافة الى
+قائمة الرغبات" .</string>
+    <string name="msg_max_quantity">لقد نفدت الكمية المتاحة من هذا المنتج</string>
+    <string name="msg_no_result">لم يتم العثور على نتائج مطابقة للبحث</string>
+    <string name="press_exit">اضغط مرة أخرى للخروج</string>
+    <string name="msg_inconvenience">نعتذر عن الازعاج! نعمل على القيام ببعض التعديلات في التطبيق. سنعود بعد دقائق.</string>
+    <string name="msg_session_expire">يلزمك تسجيل الدخول مرة أخرى بعد انتهاء الجلسة</string>
+    <string name="enable_location">يجب تشغيل "خدمات الموقع" لاستخدام هذا التطبيق. لتحديد موقعك، من فضلك اذهب الى "ضبط" وقم بالسماح للتطبيق بالوصول الى موقعك من "خدمات الموقع".</string>
+    <string name="settings">الضبط</string>
+
+    <string name="pf_title">بوابة الدفع الإلكتروني بيفورت</string>
+    <string name="pf_card_holder_name_hint">إسم صاحب البطاقة</string>
+    <string name="pf_card_number_hint">رقم البطاقة</string>
+    <string name="pf_visa">VISA</string>
+    <string name="pf_cvv_hint">CVV</string>
+    <string name="pf_pay">دفع</string>
+    <string name="pf_ok">تم</string>
+    <string name="pf_remember_me">تذكرنى</string>
+    <string name="pf_expiry_date_hint">تاريخ إنتهاء صلاحية البطاقة</string>
+
+    <!--App Info-->
+    <!--<string name="info_app_name">&#160;-&#160;اسم التطبيق</string>-->
+    <!--<string name="info_app_version">&#160;-&#160;اصدار التطبيق</string>-->
+    <!--<string name="info_app_name">App name&#160;-&#160;</string>-->
+    <!--<string name="info_app_version">App version&#160;-&#160; </string>-->
+    <!--<string name="info_app_version_code">App version code&#160;-&#160;</string>-->
+    <!--<string name="info_app_build">App Build&#160;-&#160;</string>-->
+    <!--<string name="info_app_environment">Api Environment&#160;-&#160;</string>-->
+
+    <!--location-->
+    <!--<string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDBPA3RhYMF9iCaFtyfkbgQ-ArzrkGIlAg</string>-->
+    <string name="address_found">العنوان تم العثور عليه</string>
+    <string name="no_address_found">عذرا ، لم يتم العثور على عنوان</string>
+    <string name="no_location_data_provided">لا بيانات الموقع المقدمة</string>
+    <string name="service_not_available">عذرًا ، الخدمة غير متوفرة</string>
+    <string name="invalid_lat_long_used">خط العرض أو خط الطول غير صالحين</string>
+    <string name="no_geocoder_available">لا يوجد geocoder المتاحة</string>
+    <string name="permission_rationale">مطلوب إذن الموقع للوظائف الأساسية</string>
+    <string name="permission_denied_explanation">تم رفض الإذن ، ولكن هناك حاجة للوظائف الأساسية.</string>
+
+    <!--category-->
+    <string name="women">النساء</string>
+    <string name="men">الرجال</string>
+    <string name="kids">الأطفال</string>
+
+    <!--country-->
+    <string name="saudi_arabia">السعودية</string>
+    <string name="uae">الامارات</string>
+    <string name="bahrin">البحرين</string>
+    <string name="kuwait">الكويت</string>
+    <string name="oman">عمان</string>
+    <string name="qatar">قطر</string>
+
+
+    <string-array name="sidemenu_array">
+
+        <item>@string/products</item>
+        <item>@string/search</item>
+        <item>@string/shopping_bag</item>
+        <item>@string/wishlist</item>
+        <item>@string/my_shy7lo</item>
+
+    </string-array>
+
+    <string-array name="information_array">
+        <item>عن شي حلو</item>
+        <item>سياسة الخصوصية</item>
+        <item>أفلييت شي حلو</item>
+    </string-array>
+
+    <string-array name="customer_service_array">
+        <item>سياسة الاسترجاع والاستبدال</item>
+        <item>الشحن والتوصيل</item>
+        <item>دليل المقاسات</item>
+        <item>طرق الدفع</item>
+        <item>أسئلة شائعة</item>
+    </string-array>
+
+    <string-array name="product_tab_array">
+
+        <item>النساء</item>
+        <item>الرجال</item>
+        <item>أطفال</item>
+    </string-array>
+
+    <!--new String-->
+    <!--<string name="welcome">مرحبا بك في</string>-->
+    <!--<string name="login">تسجيل الدخول</string>-->
+    <!--<string name="have_account">لدي حساب بالفعل</string>-->
+    <!--<string name="your_style">وجهة نمط بريمير الخاص بك</string>-->
+    <!--<string name="skip">تخطى</string>-->
+    <!--<string name="choose_country">اختر بلدك</string>-->
+    <!--<string name="fast_shipping_gcc">شحن مجاني وسريع في دول مجلس التعاون الخليجي</string>-->
+    <!--<string name="guaranteed_purchase">مضمونة مع كل عملية شراء</string>-->
+    <!--<string name="shopping_for">الذين التسوق</string>-->
+    <!--<string name="genuine">100٪ حقيقية</string>-->
+    <!--<string name="high_qaulity">عالية الجودة الملابس، الأحذية والاكسسوارات</string>-->
+    <!--<string name="shop_now">تسوق الآن</string>-->
+
+    <!--<string name="add_to_cart">أضف إلى السلة</string>-->
+    <!--<string name="item_info">معلومات البند</string>-->
+    <!--<string name="shipping_terms">شروط الشحن</string>-->
+    <!--<string name="you_like">قد يعجبك ايضا</string>-->
+    <!--<string name="sizes_table">جدول المقاسات</string>-->
+
+    <!--&lt;!&ndash;sidebar&ndash;&gt;-->
+    <string name="shy7lo_homes">شي حلو</string>
+    <string name="my_bag">حقيبتي</string>
+    <string name="account">حسابي</string>
+    <string name="help_faqs">المساعدة والأسئلة الشائعة</string>
+    <string name="for_customers">للعملاء</string>
+
+    <!--New String-->
+    <string name="welcome">مرحبًا بك!</string>
+    <string name="english">English</string>
+    <string name="arabic">عـربـي</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="have_account">لديك حساب على شي حلو؟</string>
+    <string name="have_not_account">؟ليس لديك حساب</string>
+    <string name="your_style">وجهتك الأولى للموضة والأزياء</string>
+    <string name="skip">تخطي</string>
+    <string name="fast_shipping_gcc">شحن سريع لجميع دول الخليج</string>
+    <string name="guaranteed_purchase">شحن سريع لجميع دول الخليج</string>
+    <string name="days_return">استبدال واسترجاع لمدة 365 يوم</string>
+    <string name="optional_cash_return">امكانية استرداد قيمة الطلب كاش</string>
+    <string name="choose_country">الدولة</string>
+    <string name="choose_currency">العملة</string>
+    <string name="shopping_for">لمن أتسوق؟</string>
+    <string name="genuine">ماركات أصلية 100%</string>
+    <string name="high_qaulity">تشكيلة من أرقى المنتجات في فئات الملابس والأحذية والاكسسوارات</string>
+    <string name="shop_now">تسوق الآن!</string>
+    <string name="user">مستخدم</string>
+    <string name="clear_all_filters">الغاء تصفية البحث</string>
+
+    <string name="oh">حقيبة التسوق</string>
+    <string name="have_not_anything">لم تقم باضافة منتجات الى حقيبة التسوق.</string>
+    <string name="nothing_here">قائمة الرغبات فارغة.</string>
+    <string name="msg_wishlist_empty">قم بإضافة منتجاتك المفضلة إلى قائمة الرغبات بالنقر على رمز القلب أثناء التسوق على شي حلو.</string>
+    <string name="msg_order_complete">تم اتمام الطلب بنجاح!</string>
+    <string name="msg_sent_email">تم اتمام الطلب بنجاح!</string>
+    <string name="msg_checkout_shopping">هل ترغب في المتابعة للدفع أو متابعة التسوق</string>
+    <string name="msg_item_saved">تم اضافة المنتج الى المفضلة</string>
+    <string name="msg_item_removed">تم حذف المنتج من المفضلة</string>
+    <string name="item_added">تم إضافة المنتج إلى حقيبة التسوق</string>
+    <string name="to_bag">حقيبة التسوق</string>
+    <string name="save">حفظ</string>
+    <string name="add_to_cart">اضافة الى حقيبة التسوق</string>
+    <string name="add_all_to_cart">اضافة جميع المنتجات الى حقيبة التسوق</string>
+    <string name="item_info">وصف المنتج</string>
+    <string name="shipping_terms">شروط الشحن والتوصيل</string>
+    <string name="you_like">منتجات ستنال اعجابك</string>
+    <string name="sizes_table">دليل المقاسات</string>
+    <string name="item">:عدد المنتجات</string>
+    <string name="qty">الكمية</string>
+    <string name="share_your">مشاركة</string>
+    <string name="please_signin">يرجى تسجيل الدخول الى حسابك!</string>
+    <string name="please_signup">يرجى التسجيل باستخدام البريد الإلكتروني!</string>
+    <string name="or_signup">أو التسجيل باستخدام البريد الإلكتروني</string>
+    <string name="signup_with">أو التسجيل باستخدام البريد الإلكتروني</string>
+    <string name="wrong_email">بريد إليكتروني غير صحيح! من فضلك تأكد من البريد الإلكتروتي وأعد المحاولة.</string>
+    <string name="wrong_pwd">كلمة السر غير صحيحة. من فضلك تأكد من كلمة السر وأعد المحاولة.</string>
+    <string name="msg_name_empty">يجب إدخال الإسم</string>
+    <string name="msg_recover_email">من فضلك ادخل البريد الإلكتروني لاعادة تعيين كلمة السر</string>
+    <string name="send_reset_link">إرسال</string>
+    <string name="personal_info">البيانات الشخصية</string>
+    <string name="name_surname">الاسم الأول واسم العائلة</string>
+    <string name="phone_field">رقم الهاتف</string>
+    <string name="proceed_payment">المتابعة للدفع الآمن</string>
+    <string name="delivery_address">عنوان الشحن والتوصيل</string>
+    <string name="shipping_options">خيارات الشحن</string>
+    <string name="standard_shipping">شحن مجاني</string>
+    <string name="expected_delivery">من المتوقع أن يتم ايصال الطلب ف </string>
+    <string name="express_shipping">20 ريال سعودي مصاريف خدمة التوصيل السريع</string>
+    <string name="order">المتابعة للدفع الآمن</string>
+    <string name="orders">المتابعة للدفع الآمن</string>
+    <string name="shipping_delivery">الشحن والتوصيل</string>
+    <string name="place_order">الشحن والتوصيل</string>
+    <string name="review_payment">الدفع</string>
+    <string name="payment_method">طرق الدفع</string>
+    <!--<string name="coupon_code">Coupon Code</string>-->
+    <string name="your_cart">حقيبة التسوق</string>
+    <string name="buy">إشتري الآن</string>
+    <string name="msg_neighberhood">من فضلك ادخل الى الابد</string>
+    <string name="verification_code">كود التأكيد</string>
+    <string name="please_type">من فضلك قم بادخال كود التأكيد الذي تم ارساله الى</string>
+    <string name="to_number">%s+</string>
+    <string name="msg_invalid_code">كود التأكيد غير صحيح! من فضلك حاول مرة أخرى.</string>
+    <string name="not_recieve_code">لم يتم استلام كود التأكيد</string>
+    <string name="resend_code">اعادة ارسال كود التأكيد</string>
+    <string name="login_today">تسجيل الدخول اليوم</string>
+    <string name="signup_today">التسجيل اليوم</string>
+    <string name="oh_have_not_account">لا تملك حساب على موقع شي حلو!</string>
+    <string name="come_on">تفضل بالدخول</string>
+    <string name="update_details">الاطلاع على الطلب وتحديث بيانات العميل</string>
+    <string name="join">التسجيل</string>
+    <string name="need_help">هل ترغب في المساعدة؟</string>
+    <string name="currency">العملة</string>
+    <string name="sizes">المقاس</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="sales_promotions">تلقي اشعارات شي حلو</string>
+    <string name="e_mail">البريد الإلكتروني</string>
+    <string name="change_email">تغيير عنوان البريد الإليكتروني</string>
+    <string name="change_password">تغيير كلمة السر</string>
+    <string name="my_orders">قائمة طلباتي</string>
+    <string name="my_details">البيانات الشخصية</string>
+    <string name="address_book">سجل العناوين</string>
+    <string name="sign_out">تسجيل الخروج</string>
+    <string name="start">أرغب في المشاركة</string>
+    <string name="no_thanks">لا أرغب في المشاركة</string>
+    <string name="msg_join_thousands">أنت الآن جزء من مجتمع شي حلو لعشاق الموضة والجمال</string>
+    <string name="msg_special_test">يمكنك الآن إجراء اختبار قصير والحصول على عروض وخصومات خاصة مصممة خصيصًا لك!</string>
+    <string name="delivery_details">تفاصيل التسليم</string>
+    <string name="zipcode">الرمز البريدي</string>
+    <string name="address_default_delivery">سيتم استخدام هذا العنوان كعنوان تسليم افتراضي. لا يزال بإمكانك تغييرها أثناء عملية السداد.</string>
+    <string name="go_shy7lo_test">الذهاب من خلال اختبار Shy7lo</string>
+    <string name="get_discounts">والحصول على خصومات وعروض مصممة!</string>
+    <string name="date_birth">تاريخ الميلاد</string>
+    <string name="preferred_shop">متجر المفضل</string>
+    <string name="no_order">لا توجد طلبات سابقة </string>
+    <string name="great_moment">تسوق الآن واستمتع بمجموعة متنوعة من أفضل المنتجات وأقوى العروض!</string>
+    <string name="order_tracking">تتبع الطلب</string>
+    <string name="status">الحالة:</string>
+    <string name="sent">أرسلت</string>
+    <string name="processing">معالجة</string>
+    <string name="shipped">شحنها</string>
+    <string name="in_transit">الانتقال</string>
+    <string name="delivered">تم التوصيل</string>
+    <string name="tracking">تتبع أي</string>
+    <string name="edit">تغيير</string>
+    <string name="estimated_delivery">التوصيل المتوقع:</string>
+    <string name="shipping_date">تاريخ الشحن:</string>
+    <string name="return_details">تفاصيل العودة</string>
+    <string name="return_change">العودة والتغيير</string>
+    <string name="money_return">عودة الأموال</string>
+    <string name="send">إرسال</string>
+    <string name="leave_number">اترك رقم هاتفك وسيتصل بك سبب عودتك لفريقنا</string>
+    <string name="shop_more">تسوق أكثر</string>
+    <string name="current">قائمة طلباتي الحالية</string>
+    <string name="history">قائمة طلباتي السابقة</string>
+    <string name="no_order_history">لا أوامر في التاريخ!</string>
+    <string name="home">الرئيسية</string>
+    <string name="order_details">تفاصيل الطلب</string>
+    <string name="track_order">تتبع الطلب</string>
+    <string name="cancel_order">إلغاء الطلب</string>
+    <string name="discount">الخصم</string>
+    <string name="tax_vat_5">الضريبة (5 ٪)</string>
+    <string name="total_value">إجمالي الطلب</string>
+    <string name="order_date">تاريخ الطلب</string>
+    <string name="date">تاريخ</string>
+    <string name="status_value">الحالة</string>
+    <string name="my_address">عنواني</string>
+    <string name="add_new_address">إضافة عنوان جديد</string>
+    <string name="update_address">تعديل العنوان</string>
+    <string name="shiping_information">معلومات الشحن</string>
+    <string name="change">تغيير</string>
+    <string name="change_address">تغيير العنوان</string>
+    <string name="delete_address">حذف العنوان</string>
+    <string name="default_billing_information">عنوان الفاتورة الرئيسي</string>
+    <string name="default_shiping_information">عنوان الشحن الرئيسي</string>
+    <string name="default_shiping_address">عنوان الشحن الافتراضي</string>
+    <string name="save_address">الحفظ في سجل العناوين</string>
+    <string name="view_all">عرض الكل</string>
+    <string name="free">حر</string>
+
+    <!--msg-->
+    <string name="msg_name">يرجى إدخال الاسم</string>
+
+    <!--hint-->
+    <string name="hint_field_name">اسم</string>
+    <string name="hint_field_email">البريد الإلكتروني</string>
+    <string name="hint_field_pwd">كلمة السر</string>
+    <string name="hint_current_password">كلمة السر الحالية</string>
+    <string name="hint_new_password">كلمة السر الجديدة</string>
+    <string name="hint_confirm_password">إعادة كتابة كلمة السر الجديدة</string>
+    <string name="hint_field_promo">أدخل كود الخصم</string>
+    <string name="hint_return">أريد إرجاع هذا الشيء ، لأن ...</string>
+
+    <!--message-->
+    <string name="msg_enter_zipcode">يرجى إدخال الرمز البريدي</string>
+    <string name="msg_enter_current_pwd">يرجى إدخال كلمة المرور الحالية</string>
+    <string name="msg_wrong_current_pwd">الرجاء إدخال كلمة المرور الحالية الصالحة</string>
+    <string name="msg_enter_new_pwd">يرجى إدخال كلمة المرور الجديدة</string>
+    <string name="msg_enter_confirm_pwd">من فضلك أدخل كلمة مرور تأكيد</string>
+    <string name="msg_pwd_not_match">تأكيد كلمة المرور غير متطابقة</string>
+    <string name="msg_delete_address">هل تريد بالتأكيد حذف العنوان؟</string>
+    <string name="msg_logout">هل تريد بالتأكيد تسجيل الخروج؟</string>
+    <string name="msg_added_cart">تمت إضافة المنتج إلى سلة التسوق بنجاح</string>
+    <string name="invalid_city">اسم المدينة غير صالح</string>
+    <string name="msg_no_registered_address">لا توجد عناوين</string>
+
+    <string name="msg_redirect_card">سيتم تحويلك الى صفحة الدفع باستخدام البطاقة الائتمانية</string>
+    <string name="msg_cancelled_order">تم إلغاء طلبك</string>
+
+    <!--sidebar-->
+    <!--<string name="shy7lo_homes">SHY7LO HOME</string>-->
+    <!--<string name="my_bag">MY BAG</string>-->
+    <!--<string name="account">حسابي</string>-->
+    <!--<string name="help_faqs">Help &amp; FAQs</string>-->
+    <!--<string name="for_customers">For customers</string>-->
+
+    <string-array name="shopping_for_array">
+        <item>النساء</item>
+        <item>الرجال</item>
+        <item>أطفال</item>
+    </string-array>
+
+    <string-array name="country_array">
+        <item>المملكة العربية السعودية</item>
+        <item>الإمارات العربية المتحدة</item>
+        <item>قطر</item>
+        <item>الكويت</item>
+        <item>عُمان</item>
+        <item>البحرين</item>
+    </string-array>
+
+    <string-array name="order_tab_array">
+
+        <item>@string/current</item>
+        <item>@string/history</item>
+    </string-array>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:dither="true" android:shape="rectangle" android:useLevel="false" android:visible="true">
+
+            <solid android:color="@color/white" />
+
+            <stroke android:width="5dp" android:color="@color/black" />
+
+            <corners android:radius="@dimen/landing_switch_corner" />
+
+            <size android:width="@dimen/landing_thumb_width" android:height="@dimen/landing_thumb_height" />
+        </shape>
+    </item>
+
+    <item android:state_checked="false">
+        <shape android:dither="true" android:shape="rectangle" android:useLevel="false" android:visible="true">
+
+            <solid android:color="@color/white" />
+
+            <stroke android:width="5dp" android:color="@color/black" />
+
+            <corners android:radius="@dimen/landing_switch_corner" />
+
+            <size android:width="@dimen/landing_thumb_width" android:height="@dimen/landing_thumb_height" />
+        </shape>
+    </item>
+
+
+</selector>

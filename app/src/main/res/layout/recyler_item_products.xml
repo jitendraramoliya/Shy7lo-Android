@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/tools"
+    android:id="@+id/lnrMainContainer"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <RelativeLayout
+        android:id="@+id/rlImageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_item_hieght"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp" />
+
+        <TextView
+            android:id="@+id/tvWishlist"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_wishlist_product" />
+
+        <ImageView
+            android:id="@+id/ivPreloaderProductImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_item_hieght"
+            android:background="@drawable/bg_preloader" />
+
+        <!--<ProgressBar-->
+        <!--android:id="@+id/mProgressBar"-->
+        <!--style="@style/ProgressBarLoader"-->
+        <!--android:visibility="visible" />-->
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/mAVProgressbar"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:indicatorColor="@color/gray_8a"
+            app:indicatorName="BallPulseIndicator" />
+
+    </RelativeLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tvProductOldPrice"
+            style="@style/TextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="200SAR"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/h0"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvProductNewPrice"
+            style="@style/TextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="160SAR"
+            android:textColor="@color/red_price"
+            android:textSize="@dimen/h0"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tvProductName"
+        style="@style/TextviewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:maxLines="2"
+        android:minLines="2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Uspolo"
+        android:textColor="@color/gray_85"
+        android:textSize="@dimen/h00" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/tvProductCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="left"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="T-shirt"
+        android:textSize="@dimen/h0"
+        android:visibility="gone"
+        autofit:minTextSize="5sp" />
+
+
+</LinearLayout>

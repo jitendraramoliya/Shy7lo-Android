@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rltTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ibCancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:visibility="visible"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h0" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_top_logo"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvFilterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/filter"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h3" />
+
+        <ImageButton
+            android:id="@+id/ibShoppingBags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/ic_top_filters"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvResetAll"
+        style="@style/TextviewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="@string/clear_all_filters"
+        android:textColor="@color/gray_85"
+        android:textSize="@dimen/h00" />
+
+    <include layout="@layout/view_line" />
+
+
+    <!--<ListView-->
+    <!--android:id="@+id/lvSortingList"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:divider="@color/black"-->
+    <!--android:dividerHeight="1px"-->
+    <!--android:overScrollMode="never">-->
+
+    <!--</ListView>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lvSortingList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:divider="@color/gray_ee"
+            android:dividerHeight=".5dp"
+            android:overScrollMode="never">
+
+        </ListView>
+
+        <shy7lo.com.shy7lo.widget.FilterExpandableListView
+            android:id="@+id/expFilterList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:childDivider="@color/transparent"
+            android:divider="@color/transparent"
+            android:groupIndicator="@null"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+        </shy7lo.com.shy7lo.widget.FilterExpandableListView>
+
+
+        <TableRow
+            android:id="@+id/trBottom"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvApplyFilter"
+                style="@style/TextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green_new"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/apply_filter"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h0" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+</LinearLayout>

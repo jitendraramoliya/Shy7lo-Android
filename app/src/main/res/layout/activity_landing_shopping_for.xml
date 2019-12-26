@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/skip"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h1" />
+
+    <TextView
+        android:id="@+id/tvGenuine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/genuine"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvHighQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/high_qaulity"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h0" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_shopping_for" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/dot_size"
+            android:layout_height="@dimen/dot_size"
+            android:background="@drawable/oval_gray" />
+
+        <TextView
+            android:layout_width="@dimen/dot_size"
+            android:layout_height="@dimen/dot_size"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/oval_gray"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="@dimen/dot_size"
+            android:layout_height="@dimen/dot_size"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/oval_green" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvShoppingFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/shopping_for"
+        android:textColor="@color/gray_9e"
+        android:textSize="@dimen/h0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#11000000" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1">
+
+        <shy7lo.com.shy7lo.wheel.WheelShoppingForPicker
+            android:id="@+id/pickerShoppingFor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:wheel_atmospheric="true"
+            app:wheel_curved="false"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="#11000000"
+            app:wheel_indicator_size="1dp"
+            app:wheel_item_align="center"
+            app:wheel_item_space="40dp"
+            app:wheel_item_text_color="@color/gray_9d"
+            app:wheel_selected_item_text_color="@color/black"
+            app:wheel_visible_item_count="5" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_new"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/shop_now"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/h1"
+        android:textStyle="bold" />
+
+</LinearLayout>

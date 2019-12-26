@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/llBannerLayout"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp">
+
+            <ImageView
+                android:id="@+id/ivBanner1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/box1_hieght"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tl_space_size"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivBanner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/box23_hieght"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/ivBanner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/box23_hieght"
+                    android:layout_marginTop="@dimen/tl_space_size"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tl_space_size"
+            android:layout_marginTop="@dimen/tl_space_size"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivBanner4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/box45_hieght"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/ivBanner5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/box45_hieght"
+                android:layout_marginLeft="@dimen/tl_space_size"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivBanner6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/box6_hieght"
+            android:layout_marginBottom="@dimen/tl_space_size"
+            android:layout_weight="1"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tl_space_size">
+
+            <ImageView
+                android:id="@+id/ivBanner7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/box7_hieght"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tl_space_size"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivBanner8"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/box89_hieght"
+                    android:layout_marginBottom="@dimen/tl_space_size"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/ivBanner9"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/box89_hieght"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tl_space_size">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivBanner10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/box10_hieght"
+                    android:layout_marginBottom="@dimen/tl_space_size"/>
+
+                <ImageView
+                    android:id="@+id/ivBanner11"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/box11_hieght"
+                    android:layout_marginBottom="@dimen/tl_space_size"/>
+
+                <ImageView
+                    android:id="@+id/ivBanner12"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/box12_hieght"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tl_space_size"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivBanner13"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/box1314_hieght"
+                    android:layout_marginBottom="@dimen/tl_space_size"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/ivBanner14"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/box1314_hieght"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+        </TableRow>
+
+    </LinearLayout>
+</ScrollView>

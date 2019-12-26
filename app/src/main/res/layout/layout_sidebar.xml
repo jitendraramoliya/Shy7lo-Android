@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_landing"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                style="@style/TextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="@string/user"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSidebarProducts"
+            style="@style/TextviewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/btn_home_selector"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="@string/shy7lo_homes"
+            android:textColor="@drawable/sidebar_item_text_selector"
+            android:textSize="@dimen/h1" />
+
+        <TextView
+            android:id="@+id/tvSidebarSearch"
+            style="@style/TextviewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/btn_products_selector"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="@string/category"
+            android:textAllCaps="true"
+            android:textColor="@drawable/sidebar_item_text_selector"
+            android:textSize="@dimen/h1" />
+
+        <LinearLayout
+            android:id="@+id/lnrSidebarShoppingBag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivShoppingBag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/btn_shopping_bags_selector" />
+
+                <TextView
+                    android:id="@+id/tvShoppingBagCounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/cart_counter_margin"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h00" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvSidebarShoppingBag"
+                style="@style/TextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="15dp"
+                android:text="@string/my_bag"
+                android:textColor="@drawable/sidebar_item_text_selector"
+                android:textSize="@dimen/h1" />
+
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvSidebarShoppingBag"-->
+        <!--style="@style/TextviewStyle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/bg_sidebar"-->
+        <!--android:drawableLeft="@drawable/btn_shopping_bags_selector"-->
+        <!--android:drawablePadding="15dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:padding="12dp"-->
+        <!--android:text="@string/shopping_bag"-->
+        <!--android:textColor="@drawable/sidebar_item_text_selector"-->
+        <!--android:textSize="@dimen/h1"/>-->
+
+        <LinearLayout
+            android:id="@+id/lnrSidebarWishlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivWishlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/btn_wishlist_selector" />
+
+                <TextView
+                    android:id="@+id/tvWishlistCounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textColor="@drawable/sidebar_item_text_selector"
+                    android:textSize="@dimen/h00" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvSidebarWishlist"
+                style="@style/TextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="15dp"
+                android:text="@string/wishlist"
+                android:textColor="@drawable/sidebar_item_text_selector"
+                android:textSize="@dimen/h1" />
+
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvSidebarWishlist"-->
+        <!--style="@style/TextviewStyle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/bg_sidebar"-->
+        <!--android:drawableLeft="@drawable/btn_wishlist_selector"-->
+        <!--android:drawablePadding="15dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:padding="12dp"-->
+        <!--android:text="@string/wishlist"-->
+        <!--android:textColor="@drawable/sidebar_item_text_selector"-->
+        <!--android:textSize="@dimen/h1" />-->
+
+        <TextView
+            android:id="@+id/tvSidebarMyShy7lo"
+            style="@style/TextviewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/btn_myshy7lo_selector"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="@string/account"
+            android:textColor="@drawable/sidebar_item_text_selector"
+            android:textSize="@dimen/h1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="15dp"
+            android:background="@color/sidebar_gray" />
+
+        <shy7lo.com.shy7lo.widget.NonScrollListView
+            android:id="@+id/lvSideHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0px"
+            android:divider="@color/transparent"
+            android:listSelector="@color/transparent"
+            android:overScrollMode="never"/>
+
+        <TextView
+            android:id="@+id/tvSidebarLiveChat"
+            style="@style/TextviewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="@string/live_chat"
+            android:textColor="@drawable/sidebar_item_text_selector"
+            android:textSize="@dimen/h0" />
+
+        <TextView
+            android:id="@+id/tvSidebarAppInfo"
+            style="@style/TextviewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="@string/app_info"
+            android:textColor="@drawable/sidebar_item_text_selector"
+            android:textSize="@dimen/h0" />
+
+        <TextView
+            android:id="@+id/tvSidebarSignOut"
+            style="@style/TextviewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="@string/sign_out"
+            android:textColor="@drawable/sidebar_item_text_selector"
+            android:textSize="@dimen/h0" />
+
+    </LinearLayout>
+
+</ScrollView>

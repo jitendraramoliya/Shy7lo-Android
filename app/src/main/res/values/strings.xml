@@ -1,0 +1,563 @@
+<resources>
+    <string name="app_name">Shy7lo</string>
+
+    <string name="navigation_drawer_open"></string>
+    <string name="navigation_drawer_close"></string>
+
+    <!--landing-->
+    <string name="app_title">Shy7lo</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_language">Select Language</string>
+    <string name="language_english">English</string>
+    <string name="language_arabic">العربية</string>
+    <string name="next">Next</string>
+    <string name="clear">Clear</string>
+    <string name="done">Done</string>
+    <string name="done_short">Done</string>
+    <string name="signup">Sign Up</string>
+    <string name="country">Country</string>
+    <string name="language">Language</string>
+    <string name="app_info">App info</string>
+    <string name="live_chat">Chat with Our Customer Service Team</string>
+    <string name="information">Information</string>
+    <string name="customer_service">Customer Service</string>
+    <string name="call_us">Call Us</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="share">Share</string>
+    <string name="shop">SHOP</string>
+    <string name="inup_name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="inup_email">Email</string>
+    <string name="inup_password">Password</string>
+    <string name="telephone">Telephone</string>
+    <string name="register">Register</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="apply">Apply</string>
+    <string name="request_password">Request new password</string>
+    <string name="congratulation">Congratulations!</string>
+    <string name="thank_you_choose">Thank you for choosing Shy7lo!</string>
+    <string name="thank_you_join">Thank you for joining Shy7lo!</string>
+    <string name="login_require">Login required!</string>
+    <string name="login_now">Login Now</string>
+
+    <!--hint-->
+    <string name="hint_name">Your name</string>
+    <string name="hint_fist_name">Your first name</string>
+    <string name="hint_last_name">Your last name</string>
+    <string name="hint_your_gender">Your gender</string>
+    <string name="hint_your_email">Your email</string>
+    <string name="hint_your_telephone">Your telephone</string>
+    <string name="hint_your_password">At least 6 characters</string>
+
+
+    <!--sidebar-->
+    <string name="shy7lo">Shy7lo</string>
+    <string name="products">PRODUCTS</string>
+    <string name="search">Search</string>
+    <string name="shopping_bag">Shopping Bag</string>
+    <string name="wishlist">WISHLIST</string>
+    <string name="my_shy7lo">MyShy7lo</string>
+
+    <!--currency-->
+    <string name="SAR">SAR</string>
+    <string name="AED">AED</string>
+    <string name="QAR">QAR</string>
+    <string name="OMR">OMR</string>
+    <string name="KWD">KWD</string>
+    <string name="BHD">BHD</string>
+
+    <!--Product Details-->
+    <string name="details">Details</string>
+    <string name="additional_info">Additional Information</string>
+    <string name="sku">Sku</string>
+    <string name="name">Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="perfume_size">Perfume Size</string>
+    <string name="frame_size">Frame Size</string>
+    <string name="frame_type">Frame Type</string>
+    <string name="add_to_bag">Add to bag</string>
+    <string name="size">Size</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="filter">Filter</string>
+    <string name="reset_all">Reset All</string>
+    <string name="apply_filter">Apply Filter</string>
+    <string name="all">All</string>
+    <string name="view">View</string>
+    <string name="view_shopping_bag">Edit Shopping Bag</string>
+    <string name="sort">Sort</string>
+    <string name="price_low_to_high">Price (Low to High)</string>
+    <string name="price_high_to_low">Price (High to Low)</string>
+    <string name="sort_discount">Discount</string>
+    <string name="sort_price_low">Price: High to Low</string>
+    <string name="sort_price_high">Price: Low to High</string>
+    <string name="sort_new">New</string>
+    <string name="sort_popularity">Most Popular</string>
+    <string name="sort_gridview">Grid view</string>
+    <string name="sort_listview">List view</string>
+    <string name="nothing_found">Nothing found</string>
+    <string name="change_search">Please change search criteria</string>
+    <string name="change_filters">Change filters</string>
+    <string name="category">Category</string>
+    <string name="categories">Categories</string>
+    <string name="exclusive_tax">Excl Tax:</string>
+
+
+    <string name="select_size">Select size</string>
+    <string name="osm_choice">Awesome choice!</string>
+    <string name="what_want">What do you want to do now?</string>
+    <string name="countinue_shoping">Continue shopping</string>
+    <string name="view_cart">View cart</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+    <string name="international" translatable="false">International</string>
+    <string name="us" translatable="false">US</string>
+    <string name="update_text">An update is available for the app. Please update for better experience.</string>
+    <string name="offline_text">The Internet connection appears to be offline</string>
+    <string name="remove_text">Your cart will be update as some items are not in stock or quantity are less available</string>
+    <string name="cart_update">Cart update</string>
+    <string name="fash_shipping">Free Fast Shipping</string>
+    <string name="genuine_brands">100% Genuine Brands</string>
+    <string name="days_exchange">30 Days Return And Exchange</string>
+    <string name="cash_return">Cash Return, NOT Credit</string>
+
+    <!--shopping-->
+    <string name="shopping_bag_empty">Your shopping bag is empty. \nTo add products to shopping bag go to product feed, select desier product and click add to bag button.</string>
+    <string name="go_product">Go to Products</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="delivery">Delivery</string>
+    <string name="remove">Remove</string>
+    <string name="save_later">Save for later</string>
+    <string name="checkout">Proceed to Checkout</string>
+    <string name="day">Day</string>
+    <string name="days">Days</string>
+
+    <!--notification-->
+    <string name="product_removed">Successfuly removed from wishlist</string>
+
+    <!--Login-->
+    <string name="not_member">Not a  member?</string>
+    <string name="continue_guest">Continue as guest</string>
+    <string name="or">OR</string>
+    <string name="login_shy7lo_account">Login to your Shy7lo account</string>
+    <string name="emaild_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign In</string>
+    <string name="my_account">My Account</string>
+    <string name="logout">Log out</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="mail">cs@shy7lo.com</string>
+    <string name="phone">920002352</string>
+
+    <!--shipment-->
+    <string name="shipment">Shipment</string>
+    <string name="review_pay">Review &amp; Pay</string>
+    <string name="email">Email: </string>
+    <string name="full_name">First Name</string>
+    <string name="last_full_name">Last Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="country_code">Country Code</string>
+    <string name="carrier_code">Carrier Code</string>
+    <string name="number_last7">Number</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="region">Region</string>
+    <string name="neighborhood">Neighborhood</string>
+    <string name="required_fields">* Required Fields</string>
+    <string name="select">Select</string>
+    <string name="select_address">Select Address</string>
+    <string name="set_address">Set Address</string>
+
+    <!--Pay-->
+    <string name="bank_transfer">Bank Transfer</string>
+    <string name="cash_delivery">Cash on Delivery</string>
+    <string name="credit_debit_card">Credit Cards</string>
+    <string name="card_number">Card Number *</string>
+    <string name="name_card">Name on Card</string>
+    <string name="expiraton_date">Expiration Date *</string>
+    <string name="choose_month">-- Choose Month --</string>
+    <string name="choose_year">-- Choose Year --</string>
+    <string name="cvv">Cvv *</string>
+    <string name="billing_same_shipping">Billing Address Same As Shipping Address</string>
+    <string name="register_news">Register NewsLetter</string>
+    <string name="sadad">Sadad</string>
+    <string name="paypal">Paypal</string>
+    <string name="coupon_code">Coupon Code</string>
+    <string name="include_duties">Include all duties</string>
+    <string name="validate">Validate</string>
+    <string name="delete">Delete</string>
+    <string name="back">Back</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="review_order">Review Your Order</string>
+    <string name="shiping_address">Shipping Address</string>
+    <string name="order_id">Order ID</string>
+    <string name="your_order_no">Your Order No</string>
+    <string name="mobile_no">Mobile No</string>
+
+    <!--message-->
+    <string name="msg_email_address">Please enter email</string>
+    <string name="msg_gender">Please select gender</string>
+    <string name="msg_telephone">Please enter telephone</string>
+    <string name="msg_email_not_valid">Please enter valid email address</string>
+    <string name="msg_password">Please enter password</string>
+    <string name="msg_password_min_char">Password should be at least 8 characters</string>
+    <string name="msg_password_valid_char">Minimum of different classes of characters in password is 3. Classes of characters: Lower Case, Upper Case, Digits, Special Characters.</string>
+    <string name="msg_valid_coupon_code">Enter valid promo code</string>
+    <string name="msg_coupon_code">Please Enter Your Promo Code</string>
+    <string name="msg_firstname">Please enter first name</string>
+    <string name="msg_lastname">Please enter lastname</string>
+    <string name="msg_contact_number">Please enter phone number</string>
+    <string name="msg_address">Please enter address</string>
+    <string name="msg_city">Please enter city</string>
+    <string name="msg_other_city">Please enter other city</string>
+    <string name="msg_region">Please enter region</string>
+    <string name="msg_select_dob">Please select date of birth</string>
+    <string name="msg_select_gender">Please select gender</string>
+    <string name="msg_select_country">Please select country</string>
+    <string name="msg_select_your_country">Select your country</string>
+    <string name="msg_select_your_language">Select your language</string>
+    <string name="msg_select_size">Please select size</string>
+    <string name="msg_select_payment">Please select payment method</string>
+    <string name="msg_order_successful">Your Order Placed Successfully</string>
+    <string name="msg_something_wrong">Something went wrong</string>
+    <string name="msg_outof_order">This product is out of stock</string>
+    <string name="msg_need_login">You need to login first</string>
+    <string name="msg_need_login_for_wishlist">You need to login first to favourite an item</string>
+    <string name="msg_add_wishlist">Successfully added to wishlist</string>
+    <string name="msg_subcribe_news">Subcribe to the newsletter and get the latest fashion updates!</string>
+    <string name="msg_terms_privacy">By joining you agree with our Terms and Privacy Policy</string>
+    <string name="msg_password_reset">Password reset request successful,please check your mail</string>
+    <string name="msg_empty_search">Search Shy7lo for better fashion</string>
+    <string name="msg_need_wishlist">You need to login first to get your wishlist</string>
+    <string name="msg_empty_wishlist">Your wishlist is empty.To add products to wishlist go to product feed, select desired product and click Favourite button</string>
+    <string name="msg_max_quantity">You have reached maximum quantity available</string>
+    <string name="msg_no_result">No result found</string>
+    <string name="press_exit">Press again for exit</string>
+    <string name="msg_inconvenience">Sorry for the inconvenience. There is a problem right now. Please try again after a while</string>
+    <string name="msg_session_expire">You need to login again as your session expired!</string>
+
+    <!--Payfort-->
+    <string name="pf_title">Payfort Payment</string>
+    <string name="pf_card_holder_name_hint">CARD HOLDER NAME</string>
+    <string name="pf_card_number_hint">CARD NUMBER</string>
+    <string name="pf_visa">VISA</string>
+    <string name="pf_cvv_hint">CVV</string>
+    <string name="pf_pay">PAY</string>
+    <string name="pf_ok">Ok</string>
+    <string name="pf_remember_me">Remember Me</string>
+    <string name="pf_expiry_date_hint">EXPIRY DATE</string>
+
+    <!--country-->
+    <string name="saudi_arabia">Saudi Arabia</string>
+    <string name="uae">Uae</string>
+    <string name="bahrin">Bahrain</string>
+    <string name="kuwait">Kuwait</string>
+    <string name="oman">Oman</string>
+    <string name="qatar">Qatar</string>
+
+    <!--App Info-->
+    <string name="info_app_name" translatable="false">App Name</string>
+    <string name="info_app_version" translatable="false">App Version</string>
+    <string name="info_app_version_code" translatable="false">App Build</string>
+    <string name="info_app_build" translatable="false">API</string>
+    <string name="info_app_environment" translatable="false">App Environment</string>
+    <string name="info_app_build_info" translatable="false">LIVE</string>
+    <string name="info_app_environment_info" translatable="false">PRO</string>
+
+    <!--category-->
+    <string name="women">Women</string>
+    <string name="men">Men</string>
+    <string name="kids">Kids</string>
+
+    <!--location-->
+    <!--<string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDBPA3RhYMF9iCaFtyfkbgQ-ArzrkGIlAg</string>-->
+    <string name="address_found">Address found</string>
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+    <string name="no_geocoder_available">No geocoder available</string>
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="enable_location">You must have to turn on location service to use application. To re-enable, please go to Settings and turn on Location Service for this app</string>
+    <string name="settings">Settings</string>
+
+    <string name="facebook_app_id" translatable="false">1815221135159371</string>
+
+    <string-array name="sidemenu_array">
+
+        <item>@string/products</item>
+        <item>@string/search</item>
+        <item>@string/shopping_bag</item>
+        <item>@string/wishlist</item>
+        <item>@string/my_shy7lo</item>
+
+    </string-array>
+
+    <string-array name="information_array">
+        <item>About Us</item>
+        <item>Privacy Policy</item>
+        <item>Affiliate Program</item>
+    </string-array>
+
+    <string-array name="customer_service_array">
+        <item>Return Policy</item>
+        <item>Shipping Policy</item>
+        <item>Size Guide</item>
+        <item>Payment Methods</item>
+        <item>FAQ</item>
+    </string-array>
+
+    <string-array name="product_tab_array">
+
+        <item>WOMEN</item>
+        <item>MEN</item>
+        <item>KIDS</item>
+    </string-array>
+
+    <!--New String-->
+    <string name="welcome">Welcome to</string>
+    <string name="english">English</string>
+    <string name="arabic">عـربـي</string>
+    <string name="login">Log In</string>
+    <string name="have_account">I already have an account</string>
+    <string name="have_not_account">I don\'t have an account</string>
+    <string name="your_style">your premeir style destination</string>
+    <string name="skip">Skip</string>
+    <string name="fast_shipping_gcc">Fast Shipping to GCC</string>
+    <string name="guaranteed_purchase">guaranteed with every purchase</string>
+    <string name="days_return">365 days returns on all items</string>
+    <string name="optional_cash_return">with optional cash return on every transaction</string>
+    <string name="choose_country">Choose your country</string>
+    <string name="choose_currency">Choose your currency</string>
+    <string name="shopping_for">Who I shopping for</string>
+    <string name="genuine">100% genuine</string>
+    <string name="high_qaulity">high quality clothes, shoes and accessories</string>
+    <string name="shop_now">Shop Now</string>
+    <string name="user">User</string>
+    <string name="clear_all_filters">Clear Filters</string>
+
+    <string name="oh">Shopping Bag</string>
+    <string name="have_not_anything">You haven\'t chosen anything yet!</string>
+    <string name="nothing_here">Your Wishlist  is empty.</string>
+    <string name="msg_wishlist_empty">Add products to your Wishlist by tapping the heart icon while shopping on Shy7lo.</string>
+    <string name="msg_order_complete">Your order has been successfully completed!</string>
+    <string name="msg_sent_email">was sent to your email</string>
+    <string name="msg_checkout_shopping">Would you like to check out or continue shopping?</string>
+    <string name="msg_item_saved">Item added to wishlist</string>
+    <string name="msg_item_removed">Item deleted from wishlist</string>
+    <string name="item_added">Item has been added</string>
+    <string name="to_bag">View Shopping Bag</string>
+    <string name="save">Save</string>
+    <string name="add_to_cart">Add to Shopping Bag</string>
+    <string name="add_all_to_cart">Add all to cart</string>
+    <string name="color">Color</string>
+    <string name="item_info">Item Info</string>
+    <string name="shipping_terms">Shipping Terms</string>
+    <string name="you_like">You might also like</string>
+    <string name="sizes_table">Size Guide</string>
+    <string name="item">Items:</string>
+    <string name="total">Total: </string>
+    <string name="qty">QTY</string>
+    <string name="off">OFF</string>
+    <string name="share_your">Share your</string>
+    <!--<string name="to_continue">Sign in with Google or Social Media Account</string>-->
+    <string name="please_signin">Please sign in to your account!</string>
+    <string name="please_signup">Please sign up to your email!</string>
+    <!--<string name="or_signup">Or sign up with Email</string>-->
+    <string name="or_signup">Sign in with Email</string>
+    <string name="signup_with">Sign up with Email</string>
+    <string name="wrong_email">Sorry but  this is not a valid e-mail address. Please try again!</string>
+    <string name="wrong_pwd">Sorry but  this is not a valid password. Please try again!</string>
+    <string name="msg_name_empty">Name should be not empty</string>
+    <string name="msg_recover_email">Please enter your email and we will help you recover it.</string>
+    <string name="send_reset_link">Send reset link</string>
+    <string name="personal_info">Personal info</string>
+    <string name="name_surname">Name &amp; Surname</string>
+    <string name="phone_field">Phone</string>
+    <string name="proceed_payment">Proceed to Payment</string>
+    <string name="delivery_address">Delivery address</string>
+    <string name="shipping_options">Shipping Options</string>
+    <string name="standard_shipping">Free Standard shipping</string>
+    <string name="expected_delivery">Expected delivery date January 26, 2018.  Some description about this variant.</string>
+    <string name="express_shipping">SAR 20 Express delivery</string>
+    <string name="order">Order</string>
+    <string name="orders">Orders</string>
+    <string name="processing">Processing</string>
+    <string name="shipped">Shipped</string>
+    <string name="place_order">Place order</string>
+    <string name="shipping_delivery">Shipping &amp; Delivery</string>
+    <string name="review_payment">Payment</string>
+    <string name="payment_method">Payment Methods</string>
+    <!--<string name="coupon_code">Coupon Code</string>-->
+    <string name="your_cart">Your Shopping Bag</string>
+    <string name="buy">Buy</string>
+    <string name="msg_neighberhood">Please enter neighberhood</string>
+    <string name="verification_code">Verification code</string>
+    <string name="please_type">Please type verification code  sent to</string>
+    <string name="to_number">+%s</string>
+    <string name="msg_invalid_code">Invalid code! Please try again</string>
+    <string name="not_recieve_code">If you did not recieve the verification code</string>
+    <string name="resend_code">Resend code</string>
+    <string name="login_today">Login today</string>
+    <string name="signup_today">Sign Up today</string>
+    <string name="oh_have_not_account">Oh! I don\'t have an account</string>
+    <string name="come_on">COME ON IN</string>
+    <string name="update_details">View orders and update your details</string>
+    <string name="join">Join</string>
+    <string name="need_help">Need Help?</string>
+    <string name="currency">Currency</string>
+    <string name="sizes">Sizes</string>
+    <string name="notifications">Notifications</string>
+    <string name="sales_promotions">Receive Shy7lo Notifications</string>
+    <string name="e_mail">E-mail</string>
+    <string name="change_email">Change e-mail</string>
+    <string name="change_password">Change password</string>
+    <string name="my_orders">My orders</string>
+    <string name="my_details">My details</string>
+    <string name="address_book">Address book</string>
+    <string name="sign_out">Sign out</string>
+    <string name="start">Start</string>
+    <string name="no_thanks">No, thanks</string>
+    <string name="msg_join_thousands">You have joined thousands of happy customers who buy with us!</string>
+    <string name="msg_special_test">Now you can go through a short test and get special offers and discounts tailored just for you!</string>
+    <string name="delivery_details">Delivery Details</string>
+    <string name="zipcode">Zip code</string>
+    <string name="address_default_delivery">This address will be used as a default delivery address. You can still change it when checkout.</string>
+    <string name="go_shy7lo_test">Go through Shy7lo test</string>
+    <string name="get_discounts">And get tailored discounts and offers!</string>
+    <string name="date_birth">Date of birth</string>
+    <string name="preferred_shop">Preferred Shop</string>
+    <string name="no_order">No previous orders!</string>
+    <string name="great_moment">Check our latest selection of products and offers!</string>
+    <string name="order_tracking">Order tracking</string>
+    <string name="status">Status: </string>
+    <string name="sent">Sent</string>
+    <string name="in_transit">In transit</string>
+    <string name="delivered">Delivered</string>
+    <string name="tracking">Tracking No</string>
+    <string name="estimated_delivery">Estimated delivery:</string>
+    <string name="edit">Edit</string>
+    <string name="shipping_date">Shipping date:</string>
+    <string name="return_details">Return details</string>
+    <string name="return_change">Return and change</string>
+    <string name="money_return">Money return</string>
+    <string name="send">Send</string>
+    <string name="leave_number">Leave your phone number and reason for returning our team will contact you</string>
+    <string name="shop_more">Shop More</string>
+    <string name="current">Current</string>
+    <string name="history">History</string>
+    <string name="no_order_history">No orders in history!</string>
+    <string name="home">Home</string>
+    <string name="order_details">Order details</string>
+    <string name="track_order">Track order</string>
+    <string name="cancel_order">Cancel order</string>
+
+    <string name="discount">Discounts</string>
+    <string name="tax_vat_5">Tax (Vat 5%)</string>
+    <string name="total_value">Total</string>
+    <string name="order_date">Order date</string>
+    <string name="date">Date</string>
+    <string name="status_value">Status</string>
+    <string name="my_address">My Address</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="update_address">Update Address</string>
+    <string name="shiping_information">Shipping Information</string>
+    <string name="change">Change</string>
+    <string name="change_address">Change Address</string>
+    <string name="delete_address">Delete Address</string>
+    <string name="default_billing_information">Default Billing Information</string>
+    <string name="default_shiping_information">Default Shipping Information</string>
+    <string name="default_shiping_address">Default Shipping Address</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="billing_addresses">Billing Addresses</string>
+    <string name="shiping_addresses">Shipping Addresses</string>
+    <string name="use_billing_addresses">Use as my default billing address</string>
+    <string name="use_shiping_addresses">Use as my default shipping address</string>
+    <string name="option_default_addresses">Selected option will be your default address</string>
+    <string name="default_address">Default Address</string>
+    <string name="additional_address">Additional Address</string>
+    <string name="no_address_in_book">You have no other addresses entries in your address book</string>
+    <string name="save_address">Save in My Address Book</string>
+    <string name="view_all">View All</string>
+    <string name="invalid_city">Invalid City Name</string>
+    <string name="free">Free</string>
+
+    <!--msg-->
+    <string name="msg_name">Please enter name</string>
+
+    <!--hint-->
+
+    <string name="hint_field_name">Name</string>
+    <string name="hint_field_email">E-mail</string>
+    <string name="hint_field_pwd">Password</string>
+    <string name="hint_current_password">Current Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_field_promo">Please enter your promo code</string>
+    <string name="hint_return">I want to return this thing, because …</string>
+
+    <!--message-->
+    <string name="msg_enter_zipcode">Please enter zipcode</string>
+    <string name="msg_enter_current_pwd">Please enter current password</string>
+    <string name="msg_wrong_current_pwd">Please enter valid current password</string>
+    <string name="msg_enter_new_pwd">Please enter new password</string>
+    <string name="msg_enter_confirm_pwd">Please enter confirm password</string>
+    <string name="msg_pwd_not_match">Confirm password doesn\'t match</string>
+    <string name="msg_delete_address">Are you sure to want to delete Address?</string>
+    <string name="msg_logout">Are you sure to want to Logout?</string>
+    <string name="msg_added_cart">Product Item added to cart successfuly</string>
+    <string name="msg_redirect_card">you will be redirected to credit card payment</string>
+    <string name="msg_no_registered_address">You have no registered addresses</string>
+    <string name="msg_cancelled_order">Your order has been cancelled</string>
+
+    <!--sidebar-->
+    <string name="shy7lo_homes">SHY7LO HOME</string>
+    <string name="my_bag">MY BAG</string>
+    <string name="account">MY ACCOUNT</string>
+    <string name="help_faqs">Help &amp; FAQs</string>
+    <string name="for_customers">For customers</string>
+
+    <string name="freshchat_file_provider_authority" translatable="false">shy7lo.com.shy7lo.provider</string>
+
+    <string-array name="language_array">
+        <item>English</item>
+        <item>العربية</item>
+    </string-array>
+
+    <string-array name="country_array">
+        <item>Saudi Arabia</item>
+        <item>UAE</item>
+        <item>Qatar</item>
+        <item>Kuwait</item>
+        <item>Oman</item>
+        <item>Bahrain</item>
+    </string-array>
+
+    <string-array name="currency_array">
+        <item>SAR</item>
+        <item>AED</item>
+        <item>QAR</item>
+        <item>KWD</item>
+        <item>OMR</item>
+        <item>BHD</item>
+    </string-array>
+
+    <string-array name="shopping_for_array">
+        <item>Women</item>
+        <item>Men</item>
+        <item>Kids</item>
+    </string-array>
+
+    <string-array name="order_tab_array">
+
+        <item>@string/current</item>
+        <item>@string/history</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <com.shamanland.fonticon.FontIconView
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_cancel"
+            android:clickable="true"
+            android:onClick="onBackPressed" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/pf_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h1" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+
+    <TextView
+        android:id="@+id/amountTV"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/h1"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCardNumber"
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:gravity="right"
+                        android:text="@string/card_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/h0" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/pf_et_height"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/cardNumberIL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/rounded_gray_border"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            app:errorEnabled="true">
+
+                            <EditText
+                                android:id="@+id/cardNumberET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:gravity="right"
+                                android:hint="@string/pf_card_number_hint"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="16"
+                                android:maxLines="1"
+                                android:textSize="@dimen/h0" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <com.shamanland.fonticon.FontIconView
+                            android:id="@+id/cartTypeIV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:text=""
+                            android:textColor="@color/btn_color"
+                            android:textSize="@dimen/h2"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/cardNumErrorTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red_c33"
+                        android:textSize="@dimen/h00" />
+
+                    <TextView
+                        android:id="@+id/tvNameOnCard"
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/name_card"
+                        android:gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/h0" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/holderNameIL"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/pf_et_height"
+                        android:background="@drawable/rounded_gray_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        app:errorEnabled="false">
+
+                        <EditText
+                            android:id="@+id/holderNameET"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="@string/pf_card_holder_name_hint"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:textSize="@dimen/h0" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tvExpirationDate"
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:gravity="right"
+                        android:text="@string/expiraton_date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/h0" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/expiryDateIL"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/pf_et_height"
+                        android:background="@drawable/rounded_gray_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        app:errorEnabled="true">
+
+                        <EditText
+                            android:id="@+id/expiryDateET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="@string/pf_expiry_date_hint"
+                            android:imeOptions="actionNext"
+                            android:inputType="date"
+                            android:maxLength="5"
+                            android:maxLines="1"
+                            android:textSize="@dimen/h0" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/expiryDateErrorTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red_c33"
+                        android:textSize="@dimen/h00" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvCvv"
+                            style="@style/TextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/cvv"
+                            android:layout_alignParentRight="true"
+                            android:textAllCaps="true"
+                            android:gravity="right"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/h0" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/cvvIL"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/pf_et_height"
+                            android:layout_below="@+id/tvCvv"
+                            android:layout_toRightOf="@+id/tvCard"
+                            android:background="@drawable/rounded_gray_border"
+                            android:gravity="right"
+                            android:padding="5dp"
+                            app:errorEnabled="true">
+
+                            <EditText
+                                android:id="@+id/cvvET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:gravity="right"
+                                android:hint="@string/pf_cvv_hint"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:maxLines="1"
+                                android:textSize="@dimen/h0" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/tvCard"
+                            style="@style/TextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/etCvv"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/ic_cvv"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/h1" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/cvvErrorTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red_c33"
+                        android:textSize="@dimen/h00" />
+
+
+                    <CheckedTextView
+                        android:id="@+id/ctvBillingSameShipping"
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:checkMark="@null"
+                        android:drawableLeft="@drawable/ic_unchecked"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@null"
+                        android:gravity="center_vertical"
+                        android:text="@string/billing_same_shipping"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/h00"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray_d3"
+                        android:visibility="gone" />
+
+                    <CheckedTextView
+                        android:id="@+id/ctvRegisterNews"
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkMark="@null"
+                        android:drawableLeft="@drawable/ic_unchecked"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@null"
+                        android:gravity="center_vertical"
+                        android:text="@string/register_news"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/h00"
+                        android:visibility="gone" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rememberMeRL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/pf_remember_me"
+                            android:textColor="@android:color/darker_gray"
+                            android:visibility="gone" />
+
+                        <ToggleButton
+                            android:id="@+id/rememberMeTB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:checked="true"
+                            android:textOff=""
+                            android:textOn=""
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/btn_color">
+
+                        <Button
+                            android:id="@+id/payBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:onClick="onPayPressed"
+                            android:text="@string/pf_pay"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/h2" />
+
+                        <ProgressBar
+                            android:id="@+id/payLoadingPB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <WebView
+                    android:id="@+id/threeDsWV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:windowSoftInputMode="adjustPan" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

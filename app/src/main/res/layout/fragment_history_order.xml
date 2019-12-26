@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/tvOrderCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/order"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textColor="@color/gray_85"
+        android:textSize="@dimen/_12sdp"/>
+
+    <ListView
+        android:id="@+id/lvHistoryOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvOrderCount"
+        android:divider="@color/gray_85"
+        android:dividerHeight="1px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tvOrderCount"
+        android:background="@color/gray_85" />
+
+
+    <LinearLayout
+        android:id="@+id/lnrNoOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/gray_db"
+            android:background="@drawable/ic_order_bag" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/no_order_history"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/great_moment"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h0" />
+
+    </LinearLayout>
+
+</RelativeLayout>

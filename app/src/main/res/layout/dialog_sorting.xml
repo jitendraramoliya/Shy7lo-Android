@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_alpha1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lnrContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lvSorting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1px"
+            android:divider="@color/gray_ee"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvPoularity"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:padding="15dp"-->
+            <!--android:text="@string/sort_popularity"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="@dimen/h0" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@color/gray_ee" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvNew"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:padding="15dp"-->
+            <!--android:text="@string/sort_new"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="@dimen/h0" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@color/gray_ee" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvPriceLow"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:padding="15dp"-->
+            <!--android:text="@string/sort_price_low"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="@dimen/h0" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@color/gray_ee" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvPriceHigh"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:padding="15dp"-->
+            <!--android:text="@string/sort_price_high"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="@dimen/h0" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@color/gray_ee" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvDiscount"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:padding="15dp"-->
+            <!--android:text="@string/sort_discount"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="@dimen/h0" />-->
+
+
+    </LinearLayout>
+
+</RelativeLayout>

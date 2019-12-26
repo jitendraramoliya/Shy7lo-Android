@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lnrTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/ic_top_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:text="@string/category"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h2" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+
+    <com.flyco.tablayout.SegmentTabLayout
+        android:id="@+id/stlCategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/segment_height"
+        android:layout_margin="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone"
+        app:tl_bar_stroke_color="@color/black"
+        app:tl_indicator_corner_radius="5dp"
+        app:tl_indicator_margin_bottom="0dp"
+        app:tl_indicator_margin_left="0dp"
+        app:tl_indicator_margin_right="0dp"
+        app:tl_indicator_margin_top="0dp"
+        app:tl_textSelectColor="@color/white"
+        app:tl_textUnselectColor="@color/black"
+        tl:tl_indicator_anim_enable="true"
+        tl:tl_indicator_color="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<shy7lo.com.shy7lo.widget.CategoryExpandableListView-->
+        <!--android:id="@+id/aelvWomen"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:groupIndicator="@null"-->
+        <!--android:scrollbars="none"-->
+        <!--android:visibility="visible">-->
+
+        <!--</shy7lo.com.shy7lo.widget.CategoryExpandableListView>-->
+
+        <ExpandableListView
+            android:id="@+id/elvGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"
+            android:visibility="visible">
+
+        </ExpandableListView>
+
+        <ExpandableListView
+        android:id="@+id/elvWomen"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:groupIndicator="@null"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        </ExpandableListView>
+
+        <!--<shy7lo.com.shy7lo.widget.CategoryExpandableListView-->
+        <!--android:id="@+id/aelvMen"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:groupIndicator="@null"-->
+        <!--android:scrollbars="none"-->
+        <!--android:visibility="gone">-->
+
+        <!--</shy7lo.com.shy7lo.widget.CategoryExpandableListView>-->
+
+        <ExpandableListView
+            android:id="@+id/elvMen"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+        </ExpandableListView>
+
+        <!--<shy7lo.com.shy7lo.widget.CategoryExpandableListView-->
+        <!--android:id="@+id/aelvKid"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:groupIndicator="@null"-->
+        <!--android:scrollbars="none"-->
+        <!--android:visibility="gone">-->
+
+        <!--</shy7lo.com.shy7lo.widget.CategoryExpandableListView>-->
+
+        <ExpandableListView
+            android:id="@+id/elvKid"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+        </ExpandableListView>
+
+    </RelativeLayout>
+
+</LinearLayout>

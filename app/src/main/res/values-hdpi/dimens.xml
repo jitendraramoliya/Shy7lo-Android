@@ -1,0 +1,88 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--font size-->
+    <dimen name="h000">8sp</dimen>
+    <dimen name="h00">10sp</dimen>
+    <dimen name="h01">11sp</dimen>
+    <dimen name="h0">12sp</dimen>
+    <dimen name="h1">15sp</dimen>
+    <dimen name="h2">18sp</dimen>
+    <dimen name="h3">20sp</dimen>
+    <dimen name="h4">22sp</dimen>
+    <dimen name="h5">25sp</dimen>
+
+    <!--language-->
+    <dimen name="txt_margin_top">50dp</dimen>
+    <dimen name="dot_size">8dp</dimen>
+
+    <!--landing-->
+    <dimen name="flag_width">55dp</dimen>
+    <dimen name="flag_height">35dp</dimen>
+    <dimen name="btn_width">80dp</dimen>
+    <dimen name="btn_height">30dp</dimen>
+    <dimen name="seperator_margin">22dp</dimen>
+    <dimen name="lang_margin_tb">30dp</dimen>
+    <dimen name="landing_top_height">70dp</dimen>
+    <dimen name="landing_bottom_height">45dp</dimen>
+    <dimen name="landing_pop_padding">6dp</dimen>
+    <dimen name="landing_lnr_padding">28dp</dimen>
+    <dimen name="landing_main_lnr_padding_lr">16dp</dimen>
+    <dimen name="landing_main_lnr_padding_tb">30dp</dimen>
+    <dimen name="segment_height">30dp</dimen>
+    <dimen name="sort_size">28dp</dimen>
+
+    <dimen name="landing_switch_width">220dp</dimen>
+    <dimen name="landing_switch_height">45dp</dimen>
+    <dimen name="landing_switch_corner">25dp</dimen>
+
+    <dimen name="landing_thumb_width">110dp</dimen>
+    <dimen name="landing_thumb_height">40dp</dimen>
+    <dimen name="pb_img_size">24dip</dimen>
+
+    <!--products-->
+    <dimen name="expand_list_img_size">30dp</dimen>
+    <dimen name="tl_space_size">2dp</dimen>
+    <dimen name="box1_hieght">252dp</dimen>
+    <dimen name="box23_hieght">125dp</dimen>
+    <dimen name="box45_hieght">125dp</dimen>
+    <dimen name="box6_hieght">200dp</dimen>
+    <dimen name="box7_hieght">402dp</dimen>
+    <dimen name="box89_hieght">200dp</dimen>
+    <dimen name="box10_hieght">350dp</dimen>
+    <dimen name="box11_hieght">275dp</dimen>
+    <dimen name="box12_hieght">225dp</dimen>
+    <dimen name="box1314_hieght">426dp</dimen>
+    <dimen name="signup_hieght">100dp</dimen>
+
+    !--shopping cart-->
+    <dimen name="cart_btn_size">12dp</dimen>
+    <dimen name="cart_item_margin_top">5dp</dimen>
+    <dimen name="cart_item_btn_size">25dp</dimen>
+    <dimen name="cart_item_qty_size">22dp</dimen>
+    <dimen name="cart_item_btn_wishlist_margin">5dp</dimen>
+    <dimen name="cart_counter_margin">25dp</dimen>
+    <dimen name="wishlist_counter_margin">20dp</dimen>
+
+    <!--product items-->
+    <dimen name="list_item_hieght">280dp</dimen>
+    <dimen name="list_item_cart_width">75dp</dimen>
+    <dimen name="list_item_cart_hieght">95dp</dimen>
+    <dimen name="list_item_review_order_width">75dp</dimen>
+    <dimen name="list_item_review_order_hieght">95dp</dimen>
+    <dimen name="list_item_wishlist_width">45dp</dimen>
+    <dimen name="list_item_wishlist_hieght">60dp</dimen>
+    <dimen name="list_item_margin">30dp</dimen>
+    <dimen name="grid_item_hieght">205dp</dimen>
+    <dimen name="grid_item_margin">10dp</dimen>
+    <dimen name="vp_hieght">320dp</dimen>
+    <dimen name="icon_size">35dp</dimen>
+    <dimen name="icon_size_height">22dp</dimen>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/green_app</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">@color/black_alpha8</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_alpha8">#55000000</color>
+    <color name="black_alpha1">#33000000</color>
+    <color name="green">#00FF00</color>
+    <color name="green_app">#1ec81e</color>
+    <color name="green_new">#3fde65</color>
+    <color name="green_shipping">#70da73</color>
+    <color name="green_bg">#B0D9A3</color>
+    <color name="green_txt">#4a8e27</color>
+    <color name="green_popup">#c5f5d0</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_60">#60000000</color>
+    <color name="help_blue">#007aff</color>
+
+    <!--sidebar-->
+    <color name="sb_selection">#009999</color>
+
+
+    <!--button-->
+    <color name="btn_color">#0f5b8a</color>
+    <color name="btn_color_selector">#014169</color>
+
+    <!--Products-->
+    <color name="gray_ea">#EAEAEA</color>
+    <color name="gray_separator">#c7c2c2</color>
+    <color name="gray_52">#525252</color>
+    <color name="gray_4a">#4a4a4a</color>
+    <color name="gray_bb">#bbbbbb</color>
+    <color name="gray_99">#999999</color>
+    <color name="gray_dc">#dcdcdc</color>
+    <color name="gray_66">#666666</color>
+    <color name="gray_33">#333333</color>
+    <color name="gray_eb">#ebebe4</color>
+    <color name="gray_ef">#efefef</color>
+    <color name="gray_d3">#d3d3d3</color>
+    <color name="gray_f2">#f2f2f2</color>
+    <color name="gray_71">#717171</color>
+    <color name="gray_68">#686868</color>
+    <color name="gray_89">#898989</color>
+    <color name="gray_f4">#f4f4f4</color>
+    <color name="gray_f7">#f7f7f7</color>
+    <color name="gray_5a">#5a5a5a</color>
+    <color name="gray_b9">#b9b9b9</color>
+    <color name="gray_b7">#b7b7b7</color>
+    <color name="gray_db">#dbdbdb</color>
+    <color name="gray_df">#dfdfdf</color>
+    <color name="gray_cc">#cccccc</color>
+    <color name="gray_e4">#e4e4e4</color>
+    <color name="gray_f9">#f9f9f9</color>
+    <color name="gray_f1">#f1f1f1</color>
+    <color name="gray_8a">#8a8a8a</color>
+    <color name="gray_42">#424242</color>
+    <color name="gray_4d">#4d4d4d</color>
+    <color name="gray_e6">#e6e6e6</color>
+    <color name="gray_9d">#9d9d9d</color>
+    <color name="gray_b2">#b2b2b2</color>
+    <color name="gray_9e">#9e9e9e</color>
+    <color name="sidebar_gray">#1e000000</color>
+    <color name="gray_9000">#99000000</color>
+    <color name="gray_ee">#EEEEEE</color>
+    <color name="gray_d5">#D5D5D5</color>
+    <color name="gray_85">#858585</color>
+    <color name="gray_80">#808080</color>
+    <color name="gray_9b">#9b9b9b</color>
+    <color name="gray_f0">#f0f0f0</color>
+
+
+    <color name="main_menu">#7e46da</color>
+
+    <color name="white_top_alpha">#c8ffffff</color>
+    <color name="list_row_default_bg">#ffffff</color>
+    <color name="list_row_pressed_bg">#008cef</color>
+    <color name="list_row_selected_bg">#86d3f6</color>
+    <color name="text_color_default">#00000C</color>
+    <color name="text_color_inverse">#FFFFFF</color>
+    <color name="red_c33">#cc3333</color>
+    <color name="red">#ff0000</color>
+    <color name="red_slider">#ff6767</color>
+    <color name="red_price">#ef1b4c</color>
+    <color name="red_border">#ff6666</color>
+    <color name="red_details_msg">#82ff0000</color>
+
+    <color name="safron">#ff6600</color>
+    <color name="yellow_delivery">#fffae0</color>
+
+</resources>

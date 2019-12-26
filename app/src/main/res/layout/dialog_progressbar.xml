@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="100dp"
+    android:layout_height="100dp">
+
+    <shy7lo.com.shy7lo.widget.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        wheel:matProg_barColor="@color/main_menu"
+        wheel:matProg_barWidth="5dp"
+        wheel:matProg_progressIndeterminate="true" />
+
+    <ImageButton
+        android:id="@+id/doneImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:visibility="gone"
+        android:src="@drawable/donewhitebold" />
+
+</RelativeLayout>

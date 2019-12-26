@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:scrollbars="none">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h3"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivLangLogo"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:padding="1dp"
+        android:src="@drawable/logo_arabic" />
+
+    <TextView
+        android:id="@+id/tvYourStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="-20dp"
+        android:visibility="gone"
+        android:text="@string/your_style"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h0" />
+
+    <TextView
+        android:id="@+id/tvEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/txt_margin_top"
+        android:background="@color/green_new"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/english"
+        android:textColor="@color/white"
+        android:textSize="@dimen/h2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvArabic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/green_new"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/arabic"
+        android:textColor="@color/white"
+        android:textSize="@dimen/h2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/txt_margin_top"
+        android:text="@string/have_account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h0" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h2" />
+
+</LinearLayout><!--</ScrollView>-->

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/mTopLayout"
+        layout="@layout/layout_top_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lnrLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_wishlist_empty" />
+
+            <TextView
+                android:id="@+id/tvLoginText"
+                style="@style/TextviewStyle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/msg_need_wishlist"
+                android:textColor="@color/gray_66"
+                android:textSize="@dimen/h1" />
+
+            <Button
+                android:id="@+id/btnLoginNow"
+                style="@style/TextviewStyle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/black"
+                android:padding="8dp"
+                android:text="@string/login_now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h0" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrWishListEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_wishlist_empty" />
+
+                <TextView
+                    android:id="@+id/tvWishlistNothingHere"
+                    style="@style/TextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:gravity="center"
+                    android:text="@string/nothing_here"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h0"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvWishlistEmptyText"
+                    style="@style/TextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/msg_wishlist_empty"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h0" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnGoToProducts"
+                style="@style/TextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/green_new"
+                android:padding="8dp"
+                android:text="@string/shop_now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrWishList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/lvWishList"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/lnrShareWishlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvShareYour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_share_gray"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/share_your"
+                    android:textColor="@color/gray_85"
+                    android:textSize="@dimen/h0" />
+
+                <TextView
+                    android:id="@+id/tvWishList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wishlist"
+                    android:textColor="@color/gray_80"
+                    android:textSize="@dimen/h0" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddAllToCart"
+                style="@style/TextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/green_new"
+                android:padding="8dp"
+                android:text="@string/add_all_to_cart"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h1"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone"></LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ibCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/verification_code"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h2" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvPleaseType"
+            style="@style/TextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/please_type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h1" />
+
+        <TextView
+            android:id="@+id/tvToNumber"
+            style="@style/TextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/to_number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h1" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <shy7lo.com.shy7lo.widget.PinView
+                android:id="@+id/mPinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:textColor="@color/pin_text_colors"
+                app:itemRadius="@dimen/pv_pin_view_item_radius"
+                app:viewType="rectangle"
+                app:lineColor="@color/line_colors" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvInvalideCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/msg_invalid_code"
+            android:textColor="@color/red_border"
+            android:textSize="@dimen/h0"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/not_recieve_code"
+            android:textColor="@color/gray_85"
+            android:textSize="@dimen/h0" />
+
+        <TextView
+            android:id="@+id/tvResendCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/resend_code"
+            android:textColor="@color/gray_85"
+            android:textSize="@dimen/h1"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

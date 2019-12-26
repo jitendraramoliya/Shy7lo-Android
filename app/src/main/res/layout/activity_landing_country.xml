@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/skip"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h1" />
+
+    <TextView
+        android:id="@+id/tvGenuine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/fast_shipping_gcc"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvHighQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/guaranteed_purchase"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        android:textSize="@dimen/h0" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/ivCountryMap"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_map_saudi_arabia" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/ic_s7_box" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/dot_size"
+            android:layout_height="@dimen/dot_size"
+            android:background="@drawable/oval_green" />
+
+        <TextView
+            android:layout_width="@dimen/dot_size"
+            android:layout_height="@dimen/dot_size"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone"
+            android:background="@drawable/oval_gray" />
+
+        <TextView
+            android:layout_width="@dimen/dot_size"
+            android:layout_height="@dimen/dot_size"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/oval_gray" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvShoppingFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/choose_country"
+        android:textColor="@color/gray_9e"
+        android:textSize="@dimen/h0" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#11000000" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1">
+
+        <shy7lo.com.shy7lo.wheel.WheelCountryPicker
+            android:id="@+id/pickerCountry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:wheel_atmospheric="true"
+            app:wheel_curved="false"
+            app:wheel_visible_item_count="5"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="#11000000"
+            app:wheel_indicator_size="1dp"
+            app:wheel_item_space="40dp"
+            app:wheel_item_text_color="@color/gray_9d"
+            app:wheel_selected_item_text_color="@color/black"
+            app:wheel_item_align="center" />
+
+        <!--<View-->
+            <!--android:id="@+id/dtSelector"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/wheelSelectorHeight"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:alpha="0.2"-->
+            <!--android:background="@color/gray_e6" />-->
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_new"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/next"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/h1"
+        android:textStyle="bold" />
+
+</LinearLayout>

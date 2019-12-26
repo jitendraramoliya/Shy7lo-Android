@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnrTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h2" />
+
+
+    </LinearLayout>
+
+    <!--<include layout="@layout/view_line" />-->
+
+    <LinearLayout
+        android:id="@+id/lnrSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_rectangle_gray_ee"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@color/gray_66"
+                android:textColorHint="@color/gray_89"
+                android:textSize="@dimen/h1" />
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:background="@drawable/ic_top_search"
+                android:backgroundTint="@color/gray_85"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="@string/clear_all_filters"
+        android:textColor="@color/clear_text_selector"
+        android:textSize="@dimen/h00" />
+
+    <!--<include layout="@layout/view_line" />-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <shy7lo.com.shy7lo.sidebar.SectionHeaderListView
+            android:id="@+id/lvBrandOptionList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:divider="@color/gray_separator"
+            android:dividerHeight="0.5dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:scrollingCache="false" />
+
+        <ListView
+            android:id="@+id/lvIndexList"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@color/transparent"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <!--&lt;!&ndash;<ListView&ndash;&gt;-->
+        <!--<shy7lo.com.shy7lo.widget.IndexableListView-->
+        <!--android:id="@+id/lvBrandOptionList"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--</shy7lo.com.shy7lo.widget.IndexableListView>-->
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrApplyFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvApplyFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/green_new"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/apply_filter"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h1"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

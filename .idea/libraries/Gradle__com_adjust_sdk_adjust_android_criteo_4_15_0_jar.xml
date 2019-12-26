@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.adjust.sdk:adjust-android-criteo:4.15.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.adjust.sdk/adjust-android-criteo/4.15.0/4f9b4473e2969a9359b90d5fa955de01392dc4e8/adjust-android-criteo-4.15.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.adjust.sdk/adjust-android-criteo/4.15.0/8d8e2cfcbeb666141b6e780e55dc923774bc9f79/adjust-android-criteo-4.15.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

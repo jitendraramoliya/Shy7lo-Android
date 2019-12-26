@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_line" />
+
+    <TextView
+        android:id="@+id/tvPriceTitle"
+        style="@style/TextviewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="15dp"
+        android:text="@string/price"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clipChildren="false">
+
+        <shy7lo.com.shy7lo.rangeseekbar.CrystalRangeSeekbar
+            android:id="@+id/rangeSbPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvPriceMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rangeSbPrice"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h0" />
+
+        <TextView
+            android:id="@+id/tvPriceMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/rangeSbPrice"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="5000"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h0" />
+
+    </RelativeLayout>
+
+    <!--<include layout="@layout/view_line" />-->
+
+    <TextView
+        android:id="@+id/tvSortTitle"
+        style="@style/TextviewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/sort"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/lnrPopularity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnPopularity"
+                android:layout_width="@dimen/sort_size"
+                android:layout_height="@dimen/sort_size"
+                android:background="@drawable/ic_star"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/tvPopularityTitle"
+                style="@style/TextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/sort_popularity"
+                android:textColor="@color/gray_8a"
+                android:textSize="@dimen/h00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrNew"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnNew"
+                android:layout_width="@dimen/sort_size"
+                android:layout_height="@dimen/sort_size"
+                android:background="@drawable/ic_new_sort"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/tvNewTitle"
+                style="@style/TextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/sort_new"
+                android:textColor="@color/gray_8a"
+                android:textSize="@dimen/h00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrPriceLow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnPriceLow"
+                android:layout_width="@dimen/sort_size"
+                android:layout_height="@dimen/sort_size"
+                android:background="@drawable/ic_price_high"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/tvPriceLowTitle"
+                style="@style/TextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/sort_price_low"
+                android:textColor="@color/gray_8a"
+                android:textSize="@dimen/h00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrPriceHigh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnPriceHigh"
+                android:layout_width="@dimen/sort_size"
+                android:layout_height="@dimen/sort_size"
+                android:background="@drawable/ic_price"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/tvPriceHighTitle"
+                style="@style/TextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/sort_price_high"
+                android:textColor="@color/gray_8a"
+                android:textSize="@dimen/h00" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnrDiscount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnDiscount"
+                android:layout_width="@dimen/sort_size"
+                android:layout_height="@dimen/sort_size"
+                android:background="@drawable/ic_discount"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/tvDiscountTitle"
+                style="@style/TextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/sort_discount"
+                android:textColor="@color/gray_8a"
+                android:textSize="@dimen/h00" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<include layout="@layout/view_line" />-->
+
+    <LinearLayout
+        android:id="@+id/rltTopbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tvViewTitle"
+            style="@style/TextviewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/view"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h1" />
+
+        <LinearLayout
+            android:id="@+id/lnrOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lnrGridView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivHeaderGrid"
+                    android:layout_width="@dimen/item_icon_size"
+                    android:layout_height="@dimen/item_icon_size"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivHeaderList"
+                    android:background="@drawable/btn_grid_selector" />
+
+                <TextView
+                    android:id="@+id/tvGridViewTitle"
+                    style="@style/TextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="@string/sort_gridview"
+                    android:textColor="@color/gray_8a"
+                    android:textSize="@dimen/h00" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrListView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivHeaderList"
+                    android:layout_width="@dimen/item_icon_size"
+                    android:layout_height="@dimen/item_icon_size"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_list_selector" />
+
+                <TextView
+                    android:id="@+id/tvListViewTitle"
+                    style="@style/TextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="@string/sort_listview"
+                    android:textColor="@color/gray_8a"
+                    android:textSize="@dimen/h00" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

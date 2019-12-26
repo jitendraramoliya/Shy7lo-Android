@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_dg_checkmark"
+            android:drawablePadding="10dp"
+            android:text="@string/item_added"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/osm_choice"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h0" />
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="@string/msg_checkout_shopping"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h0" />
+
+
+        <Button
+            android:id="@+id/btnContinueShopping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green_new"
+            android:padding="8dp"
+            android:text="@string/countinue_shoping"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h1" />
+
+
+        <Button
+            android:id="@+id/btnViewCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:text="@string/to_bag"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h1" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

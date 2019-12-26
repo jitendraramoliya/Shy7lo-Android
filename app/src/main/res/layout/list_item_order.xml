@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/ic_arrow_right_black_big"
+        android:text="@string/status"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/order"
+        android:textColor="@color/gray_85"
+        android:textSize="@dimen/h0" />
+
+    <TextView
+        android:id="@+id/tvEstimatedDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/estimated_delivery"
+        android:textColor="@color/gray_85"
+        android:textSize="@dimen/h0" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvOrder"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_height="@dimen/_80sdp"/>
+
+</LinearLayout>

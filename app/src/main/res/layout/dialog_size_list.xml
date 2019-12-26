@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_alpha1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lnrContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tvSelectSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="@string/sizes_table"
+                android:textColor="@color/black"
+                android:textSize="@dimen/h2" />
+
+            <TextView
+                android:id="@+id/tvDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:text="@string/apply"
+                android:textColor="@color/black"
+                android:textSize="@dimen/h2" />
+
+        </RelativeLayout>
+
+        <shy7lo.com.shy7lo.wheel.WheelSizePicker
+            android:id="@+id/pickerSize"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:wheel_atmospheric="true"
+            app:wheel_curved="false"
+            app:wheel_visible_item_count="5"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="#11000000"
+            app:wheel_indicator_size="1dp"
+            app:wheel_item_space="40dp"
+            app:wheel_item_text_color="@color/gray_9d"
+            app:wheel_selected_item_text_color="@color/black"
+            app:wheel_item_align="center" />
+
+        <!--<GridView-->
+        <shy7lo.com.shy7lo.widget.ExpandableHeightGridView
+            android:id="@+id/gvSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="10dp"
+            android:numColumns="4"
+            android:visibility="gone"
+            android:overScrollMode="never"
+            android:padding="15dp"
+            android:verticalSpacing="10dp">
+
+        </shy7lo.com.shy7lo.widget.ExpandableHeightGridView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/lnrLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvInternational"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+                <!--android:text="@string/international"-->
+                <!--android:textAllCaps="true"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="@dimen/h0" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvUs"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+                <!--android:text="@string/us"-->
+                <!--android:textAllCaps="true"-->
+                <!--android:textColor="@color/gray_89"-->
+                <!--android:textSize="@dimen/h0" />-->
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

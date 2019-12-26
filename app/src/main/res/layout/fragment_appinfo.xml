@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/mTopLayout"
+        layout="@layout/layout_top_login" />
+
+    <LinearLayout
+        android:id="@+id/lnrMainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvNameTitle"
+                style="@style/TextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_app_name"
+                android:textColor="@color/gray_66"
+                android:textSize="@dimen/h1" />
+
+            <TextView
+                android:id="@+id/tvNameInfo"
+                style="@style/TextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Shy7lo"
+                android:textColor="@color/gray_99"
+                android:textSize="@dimen/h1" />
+
+        </TableRow>
+
+        <include layout="@layout/view_line" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvVersionTitle"
+                style="@style/TextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_app_version"
+                android:textColor="@color/gray_66"
+                android:textSize="@dimen/h1" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvVersionInfo"
+                    style="@style/TextviewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/gray_99"
+                    android:textSize="@dimen/h1" />
+
+                <TextView
+                    android:id="@+id/tvUpgrade"
+                    style="@style/TextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/green_app"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/update"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/h00"
+                    android:visibility="visible" />
+
+            </TableRow>
+
+        </TableRow>
+
+        <include layout="@layout/view_line" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvVersionCodeTitle"
+                style="@style/TextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_app_version_code"
+                android:textColor="@color/gray_66"
+                android:textSize="@dimen/h1" />
+
+            <TextView
+                android:id="@+id/tvVersionCodeInfo"
+                style="@style/TextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/gray_99"
+                android:textSize="@dimen/h1" />
+
+        </TableRow>
+
+        <include layout="@layout/view_line" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvEnvironmentTitle"
+                style="@style/TextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_app_environment"
+                android:textColor="@color/gray_66"
+                android:textSize="@dimen/h1" />
+
+            <TextView
+                android:id="@+id/tvEnvironmentInfo"
+                style="@style/TextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/info_app_environment_info"
+                android:textColor="@color/gray_99"
+                android:textSize="@dimen/h1" />
+
+        </TableRow>
+
+        <include layout="@layout/view_line" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvBuildTitle"
+                style="@style/TextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_app_build"
+                android:textColor="@color/gray_66"
+                android:textSize="@dimen/h1" />
+
+            <TextView
+                android:id="@+id/tvBuildInfo"
+                style="@style/TextviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/info_app_build_info"
+                android:textColor="@color/gray_99"
+                android:textSize="@dimen/h1" />
+
+        </TableRow>
+
+        <include layout="@layout/view_line" />
+
+    </LinearLayout>
+
+</LinearLayout>

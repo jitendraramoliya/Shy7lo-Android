@@ -1,0 +1,222 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'android-apt'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "shy7lo.com.shy7lo"
+        //Debug
+//        manifestPlaceholders = [onesignal_app_id: "879fde03-e0b2-45b5-b432-cfbd2dac51f7",
+//                                onesignal_google_project_number: "REMOTE"]
+        // Debug
+//         manifestPlaceholders = [onesignal_app_id: "365737df-63bc-4d7e-89a5-53fcea3dc348",
+//                                onesignal_google_project_number: "REMOTE"]
+//        //Release
+        manifestPlaceholders = [onesignal_app_id: "b13aae6a-0371-4c31-8509-1200edee9e01",
+                                onesignal_google_project_number: "REMOTE"]
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 163
+        versionName "3.0.6"
+        multiDexEnabled true
+    }
+    buildTypes {
+        buildTypes {
+            customDebugType {
+                debuggable true
+            }
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "4g"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+}
+
+//ext {
+//    supportLibVersion = '26.1.0'
+//    gmsVersion = '11.4.0'
+//}
+
+dependencies {
+
+    def supportLibVersion = '28.0.0'
+    def gmsVersion = '12.0.1'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+//    implementation 'com.android.support:appcompat-v7:23.4.0'
+//    implementation 'com.android.support:design:23.4.0'
+//    implementation 'com.jakewharton:butterknife:8.2.1'
+//    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.bumptech.glide:glide:4.0.0-RC0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC0'
+//    implementation 'com.github.bumptech.glide:glide:3.7.0'
+//    implementation 'com.github.bumptech.glide:glide:4.0.0-RC0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC0'
+//    implementation ("com.github.bumptech.glide:glide:4.8.0") {
+//        exclude group: "com.android.support"
+//    }
+    implementation 'org.jraf:android-switch-backport:2.0.1'
+    implementation 'com.fmsirvent:parallaxeverywhere:1.0.4'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+    //multidex
+    implementation 'com.android.support:multidex:1.0.2'
+//    implementation 'me.grantland:autofittextview:0.2.+'
+//    implementation 'com.wang.avi:library:2.1.3'
+
+    implementation 'org.jsoup:jsoup:1.8.3'
+
+    //Payfort support sdk
+    implementation project(':FORTSDKv1.4')
+    implementation "com.android.support:recyclerview-v7:$supportLibVersion"
+    implementation "com.android.support:support-v4:$supportLibVersion"
+    implementation "com.android.support:design:$supportLibVersion"
+    implementation("com.android.support:appcompat-v7:$supportLibVersion") {
+        transitive = true;
+    }
+    implementation 'com.victor:lib:1.0.1'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.shamanland:fonticon:0.1.8'
+
+    implementation('com.nispok:snackbar:2.11.+') {
+        // exclusion is not necessary, but generally a good idea.
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
+    implementation 'com.google.guava:guava:19.0'
+    implementation 'org.bouncycastle:bcprov-jdk16:1.46'
+    implementation 'commons-codec:commons-codec:1.10'
+
+//    implementation "com.google.firebase:firebase-appindexing:$gmsVersion"
+//    implementation "com.google.android.gms:play-services:$gmsVersion"
+//    implementation "com.google.firebase:firebase-core:$gmsVersion"
+//    implementation "com.google.firebase:firebase-auth:$gmsVersion"
+//    implementation "com.google.firebase:firebase-messaging:$gmsVersion"
+//    implementation "com.google.android.gms:play-services-location:$gmsVersion"
+//    implementation "com.google.android.gms:play-services-gcm:$gmsVersion"
+//    implementation "com.google.android.gms:play-services-basement:$gmsVersion"
+//
+//    implementation "com.google.android.gms:play-services-auth:$gmsVersion"
+//    implementation "com.google.android.gms:play-services-analytics:$gmsVersion"
+//    implementation "com.google.android.gms:play-services-base:$gmsVersion"
+//    implementation "com.google.android.gms:play-services-maps:$gmsVersion"
+//    implementation "com.google.android.gms:play-services-places:$gmsVersion"
+
+    implementation 'com.google.firebase:firebase-appindexing:17.1.0'
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.firebase:firebase-crash:16.2.1'
+//    implementation 'com.google.android.gms:play-services:12.0.1'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-gcm:16.0.0'
+    implementation 'com.google.android.gms:play-services-basement:16.1.0'
+
+//    implementation 'com.google.android.gms:play-services-ads:17.1.2'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.android.gms:play-services-analytics:16.0.6'
+    implementation 'com.google.android.gms:play-services-base:15.0.1'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //Adjust
+
+    //    implementation 'com.adjust.sdk:adjust-android:4.13.0'
+    implementation 'com.android.installreferrer:installreferrer:1.0'
+    implementation 'com.adjust.sdk:adjust-android-criteo:4.15.0'
+
+    // OneSignal SDK
+    implementation 'com.onesignal:OneSignal:[3.9.1,3.99.99)'
+//    implementation 'com.onesignal:OneSignal:[3.6.1,3.99.99)'
+
+    //fabric
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.7@aar') {
+        transitive = true;
+    }
+    implementation('com.crashlytics.sdk.android:answers:1.4.5@aar') {
+        transitive = true;
+    }
+    implementation('io.fabric.sdk.android:fabric:1.4.1@aar') {
+        transitive = true;
+    }
+    implementation 'io.branch.sdk.android:library:4.2.0'
+
+    //freshchat
+    implementation 'com.github.freshdesk:freshchat-android:1.5.3'
+
+    //Tune Library
+    implementation 'com.tune:tune-marketing-console-sdk:5.3.0'
+
+    //extra library
+    implementation 'me.grantland:autofittextview:0.2.+'
+    implementation "com.daimajia.swipelayout:library:1.2.0@aar"
+
+    implementation 'com.karumi:dexter:5.0.0'
+    implementation 'com.android.installreferrer:installreferrer:1.1'
+
+    //facebook
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '28.0.0'
+                }
+            }
+
+//            if (requested.group == 'com.google.android') {
+//                    details.useVersion '12.0.1'
+//            }
+//
+//            if (requested.group == 'com.google.firebase') {
+//                details.useVersion '12.0.1'
+//            }
+        }
+    }
+}
+
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.google.gms.google-services'
+// Work around
+com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true

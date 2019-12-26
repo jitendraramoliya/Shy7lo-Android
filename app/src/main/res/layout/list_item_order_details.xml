@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnrContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="@dimen/list_item_cart_width"
+            android:layout_height="@dimen/list_item_cart_hieght"
+            android:src="@drawable/bg_preloader" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvOldPrice"
+                            style="@style/TextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="200SAR"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/h01"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvNewPrice"
+                            style="@style/TextviewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="200SAR"
+                            android:textColor="@color/red_c33"
+                            android:textSize="@dimen/h01"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        style="@style/TextviewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/tvRemove"
+                        android:text="Lavish Alice"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/h01"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        style="@style/TextviewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvTitle"
+                        android:layout_marginTop="5dp"
+                        android:text="Lavish Alice"
+                        android:textColor="@color/gray_85"
+                        android:textSize="@dimen/h01" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/tvSize"
+                    style="@style/TextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/size"
+                    android:textColor="@color/gray_85"
+                    android:textSize="@dimen/h01" />
+
+                <TextView
+                    android:id="@+id/tvSizeValue"
+                    style="@style/TextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/size"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h01" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tvQty"
+                    style="@style/TextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qty"
+                    android:textColor="@color/gray_85"
+                    android:textSize="@dimen/h01" />
+
+                <TextView
+                    android:id="@+id/tvQtyValue"
+                    style="@style/TextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h01" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_89" />
+
+</LinearLayout>

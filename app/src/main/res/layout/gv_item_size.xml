@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btnItemSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/tvSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_black_border"
+        android:clickable="false"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:text="L"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h0"
+        autofit:minTextSize="8sp" />
+
+</RelativeLayout>
