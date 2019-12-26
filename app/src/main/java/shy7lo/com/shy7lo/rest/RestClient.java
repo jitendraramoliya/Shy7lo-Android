@@ -32,26 +32,26 @@ public class RestClient {
     public static boolean isFirebaseEnable = true;
 
     //Debug
-    private static String API2_PREFIX = "https://api2.shylabs.com";
-    private static String API_PORTAL_PREFIX = "https://portal.shylabs.com";
-    private static String API_NEW_PREFIX = "http://new.shylabs.com";
-    public static String MINT_KEY = "083b028a";
-    public static String ADJUST_ENVIRONMENT = AdjustConfig.ENVIRONMENT_SANDBOX;
-    public static boolean isLive = false;
-    public static boolean isFacebookLive = false;
-    public final static String FORT_SDK_ENVIRONMENT = FortSdk.ENVIRONMENT.TEST;
-    public final static String WS_GET_TOKEN = "https://sbpaymentservices.payfort.com/FortAPI/paymentApi";
-
-    // release
-//    private static String API2_PREFIX = "https://api2.shy7lo.com";
+//    private static String API2_PREFIX = "https://api2.shylabs.com";
 //    private static String API_PORTAL_PREFIX = "https://portal.shylabs.com";
 //    private static String API_NEW_PREFIX = "http://new.shylabs.com";
-//    public static String MINT_KEY = "db8b2126";
-//    public static String ADJUST_ENVIRONMENT = AdjustConfig.ENVIRONMENT_PRODUCTION;
-//    public static boolean isLive = true;
-//    public static boolean isFacebookLive = true;
-//    public final static String FORT_SDK_ENVIRONMENT = FortSdk.ENVIRONMENT.PRODUCTION;
-//    public final static String WS_GET_TOKEN = "https://paymentservices.payfort.com/FortAPI/paymentApi";
+//    public static String MINT_KEY = "083b028a";
+//    public static String ADJUST_ENVIRONMENT = AdjustConfig.ENVIRONMENT_SANDBOX;
+//    public static boolean isLive = false;
+//    public static boolean isFacebookLive = false;
+//    public final static String FORT_SDK_ENVIRONMENT = FortSdk.ENVIRONMENT.TEST;
+//    public final static String WS_GET_TOKEN = "https://sbpaymentservices.payfort.com/FortAPI/paymentApi";
+
+    // release
+    private static String API2_PREFIX = "https://api2.shy7lo.com";
+    private static String API_PORTAL_PREFIX = "https://portal.shylabs.com";
+    private static String API_NEW_PREFIX = "http://new.shylabs.com";
+    public static String MINT_KEY = "db8b2126";
+    public static String ADJUST_ENVIRONMENT = AdjustConfig.ENVIRONMENT_PRODUCTION;
+    public static boolean isLive = true;
+    public static boolean isFacebookLive = true;
+    public final static String FORT_SDK_ENVIRONMENT = FortSdk.ENVIRONMENT.PRODUCTION;
+    public final static String WS_GET_TOKEN = "https://paymentservices.payfort.com/FortAPI/paymentApi";
 
     public static final String API2_SHYLABS_API_URL = API2_PREFIX + "/api/";
     public static final String API_PORTAL_SHYLABS_URL = API_PORTAL_PREFIX;
