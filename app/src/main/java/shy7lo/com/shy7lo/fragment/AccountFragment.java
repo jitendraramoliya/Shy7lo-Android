@@ -27,6 +27,7 @@ import android.widget.TextView;
 
 import com.freshchat.consumer.sdk.Freshchat;
 import com.freshchat.consumer.sdk.FreshchatUser;
+import com.freshchat.consumer.sdk.exception.MethodNotAllowedException;
 import com.google.gson.Gson;
 
 import butterknife.BindView;
@@ -577,7 +578,11 @@ public class AccountFragment extends Fragment implements View.OnClickListener {
                     freshUser.setEmail("" + MyPref.getPref(getActivity(), MyPref.USER_EMAIL, ""));
                     freshUser.setPhone("+" + (MyPref.getPref(getActivity(), MyPref.DEFAULT_COUNTRY_CODE, "").replace("+", "")), "" + MyPref.getPref(getActivity(), MyPref.USER_PHONE, ""));
 
-                    Freshchat.getInstance(getActivity()).setUser(freshUser);
+                    try {
+                        Freshchat.getInstance(getActivity()).setUser(freshUser);
+                    } catch (MethodNotAllowedException e) {
+                        e.printStackTrace();
+                    }
 
                 }
 

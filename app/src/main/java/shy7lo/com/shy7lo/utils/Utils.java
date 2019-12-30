@@ -795,6 +795,7 @@ public class Utils {
         if (Shy7lo.mAppInit != null && Shy7lo.mAppInit.couponCode != null && !TextUtils.isEmpty(Shy7lo.mAppInit.couponCode.status)
                 && Shy7lo.mAppInit.couponCode.status.equals("1")) {
             MyPref.setPref(mContext, MyPref.IS_DIRECT_WEBVIEW, true);
+            LogUtils.e("", "Shy7lo.mAppInit.couponCode.status::"+Shy7lo.mAppInit.couponCode.status);
         }else{
             MyPref.setPref(mContext, MyPref.IS_DIRECT_WEBVIEW, false);
         }

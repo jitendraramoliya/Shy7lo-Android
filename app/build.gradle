@@ -182,7 +182,7 @@ dependencies {
     implementation 'io.branch.sdk.android:library:4.2.0'
 
     //freshchat
-    implementation 'com.github.freshdesk:freshchat-android:1.5.3'
+    implementation 'com.github.freshdesk:freshchat-android:3.0.0' //1.5.3
 
     //Tune Library
     implementation 'com.tune:tune-marketing-console-sdk:5.3.0'

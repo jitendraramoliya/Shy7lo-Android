@@ -1,7 +1,9 @@
 package shy7lo.com.shy7lo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -76,6 +78,22 @@ public class DirectWebviewActivity extends AppCompatActivity {
         wvWeb.setWebViewClient(new WebViewClient() {
 
             @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                LogUtils.e("", "url::"+url);
+
+                if (url.contains("cout=")){
+
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                    startActivity(browserIntent);
+
+                    return true;
+                }else{
+                    view.loadUrl(url);
+                    return false;
+                }
+            }
+
+            @Override
             public void onLoadResource(WebView view, String url) {
 //                wvWeb.loadUrl("javascript:(function() { " +
 //                        "document.querySelector('.page-header').style.display ='none';" +
@@ -83,6 +101,9 @@ public class DirectWebviewActivity extends AppCompatActivity {
 //                        "document.querySelector('.page-footer').style.display ='none';" +
 //                        "document.body.style.marginTop = '-"+marginTop+"px';" +
 //                        "})()");
+
+
+
             }
 
             @Override

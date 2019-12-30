@@ -75,6 +75,8 @@ public class SplashActivity extends Activity {
     ProgressBar pbSplash;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -333,6 +335,8 @@ public class SplashActivity extends Activity {
                                 MyPref.setPref(getActivity(), MyPref.APP_ADJUST, mIntegrations.adjust);
 
                                 Utils.setInitConfig(getActivity());
+
+                                goNext();
                             }
                         }
 
@@ -363,7 +367,7 @@ public class SplashActivity extends Activity {
             }
         });
 
-        goNext();
+
 
     }
 
@@ -473,16 +477,34 @@ public class SplashActivity extends Activity {
                     }
                 }
 
-                boolean isFirstTime = MyPref.getPref(getActivity(), MyPref.IS_FIRST_TIME, true);
-                if (isFirstTime) {
-//                    IntentHandler.startActivity(getActivity(), LandingPageActivity.class);
-                    IntentHandler.startActivity(getActivity(), LandingLanguageActivity.class);
-                } else {
-                    IntentHandler.startActivity(getActivity(), HomeActivity.class);
-//                    IntentHandler.startActivity(getActivity(), InitialScreenActivity.class);
-                }
+//                LogUtils.e("Splash Activity", "Shy7lo.mAppInit.couponCode.status::"+Shy7lo.mAppInit.couponCode.status);
+//                if (Shy7lo.mAppInit != null && Shy7lo.mAppInit.couponCode != null) {
 
-                finish();
+                    if (Shy7lo.mAppInit != null && Shy7lo.mAppInit.couponCode != null && !TextUtils.isEmpty(Shy7lo.mAppInit.couponCode.status)
+                            && Shy7lo.mAppInit.couponCode.status.equals("1")) {
+                        Bundle bundle = new Bundle();
+                        if (MyPref.getPref(getActivity(), MyPref.DEFAULT_LANGUAGE, "").equals(MyPref.LANGUAGE_Arabic)) {
+                            bundle.putString(DirectWebviewActivity.BNDL_URL, Shy7lo.mAppInit.couponCode.url_ar);
+                        } else {
+                            bundle.putString(DirectWebviewActivity.BNDL_URL, Shy7lo.mAppInit.couponCode.url_en);
+                        }
+
+                        IntentHandler.startActivity(getActivity(), DirectWebviewActivity.class, bundle);
+
+                    } else {
+
+                        boolean isFirstTime = MyPref.getPref(getActivity(), MyPref.IS_FIRST_TIME, true);
+                        if (isFirstTime) {
+//                    IntentHandler.startActivity(getActivity(), LandingPageActivity.class);
+                            IntentHandler.startActivity(getActivity(), LandingLanguageActivity.class);
+                        } else {
+                            IntentHandler.startActivity(getActivity(), HomeActivity.class);
+//                    IntentHandler.startActivity(getActivity(), InitialScreenActivity.class);
+                        }
+                    }
+
+                    finish();
+//                }
 
 
             }
